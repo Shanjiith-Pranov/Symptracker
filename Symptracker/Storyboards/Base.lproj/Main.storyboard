@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="184" y="927"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--View Controller-->
         <scene sceneID="QE9-gx-Op2">
             <objects>
-                <tabBarController id="VEO-po-zTj" sceneMemberID="viewController">
+                <tabBarController id="VEO-po-zTj" customClass="ViewController" customModule="Symptracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bMN-RR-bHt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -42,7 +42,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQz-Ab-W60" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="185" y="201"/>
+            <point key="canvasLocation" x="183" y="201"/>
         </scene>
         <!--Settings-->
         <scene sceneID="UqB-H4-f11">

@@ -66,20 +66,92 @@
 		695E83CB24E632EB00C8B817 /* Symptracker */ = {
 			isa = PBXGroup;
 			children = (
-				695E83CC24E632EB00C8B817 /* AppDelegate.swift */,
-				695E83CE24E632EB00C8B817 /* SceneDelegate.swift */,
-				695E83D024E632EB00C8B817 /* ViewController.swift */,
-				695E83D224E632EB00C8B817 /* Main.storyboard */,
+				69D307A724EE067F0077DB0F /* View controllers */,
+				69D307AD24EE07970077DB0F /* Delegates */,
+				69D307AC24EE07780077DB0F /* Storyboards */,
+				69D307AF24EE07CA0077DB0F /* Assets folder */,
+				69D307AE24EE07BE0077DB0F /* Property list */,
+			);
+			path = Symptracker;
+			sourceTree = "<group>";
+		};
+		69D307A724EE067F0077DB0F /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69D307A824EE06B60077DB0F /* Info VIew controllers */,
+				69D307AB24EE07650077DB0F /* View controller */,
+				69D307A924EE06CA0077DB0F /* Settings view controller */,
+				69D307AA24EE06D80077DB0F /* Slider class code */,
+			);
+			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		69D307A824EE06B60077DB0F /* Info VIew controllers */ = {
+			isa = PBXGroup;
+			children = (
 				69A0E62A24ED4C5500CA6027 /* InfoGraphViewController.swift */,
 				69A0E62824ECBA5700CA6027 /* InfoViewController.swift */,
 				69A0E62C24ED4C6D00CA6027 /* InfoNewsViewController.swift */,
+			);
+			path = "Info VIew controllers";
+			sourceTree = "<group>";
+		};
+		69D307A924EE06CA0077DB0F /* Settings view controller */ = {
+			isa = PBXGroup;
+			children = (
 				69A0E62624ECB95000CA6027 /* SettingsViewController.swift */,
+			);
+			path = "Settings view controller";
+			sourceTree = "<group>";
+		};
+		69D307AA24EE06D80077DB0F /* Slider class code */ = {
+			isa = PBXGroup;
+			children = (
 				69A0E62424ECB8F500CA6027 /* UISimpleSlidingTabController.swift */,
-				695E83D524E632F000C8B817 /* Assets.xcassets */,
+			);
+			path = "Slider class code";
+			sourceTree = "<group>";
+		};
+		69D307AB24EE07650077DB0F /* View controller */ = {
+			isa = PBXGroup;
+			children = (
+				695E83D024E632EB00C8B817 /* ViewController.swift */,
+			);
+			path = "View controller";
+			sourceTree = "<group>";
+		};
+		69D307AC24EE07780077DB0F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				695E83D224E632EB00C8B817 /* Main.storyboard */,
 				695E83D724E632F000C8B817 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		69D307AD24EE07970077DB0F /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				695E83CC24E632EB00C8B817 /* AppDelegate.swift */,
+				695E83CE24E632EB00C8B817 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		69D307AE24EE07BE0077DB0F /* Property list */ = {
+			isa = PBXGroup;
+			children = (
 				695E83DA24E632F000C8B817 /* Info.plist */,
 			);
-			path = Symptracker;
+			path = "Property list";
+			sourceTree = "<group>";
+		};
+		69D307AF24EE07CA0077DB0F /* Assets folder */ = {
+			isa = PBXGroup;
+			children = (
+				695E83D524E632F000C8B817 /* Assets.xcassets */,
+			);
+			path = "Assets folder";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

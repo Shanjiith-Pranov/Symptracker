@@ -66,11 +66,11 @@
 		695E83CB24E632EB00C8B817 /* Symptracker */ = {
 			isa = PBXGroup;
 			children = (
+				695E83DA24E632F000C8B817 /* Info.plist */,
 				69D307A724EE067F0077DB0F /* View controllers */,
 				69D307AD24EE07970077DB0F /* Delegates */,
 				69D307AC24EE07780077DB0F /* Storyboards */,
 				69D307AF24EE07CA0077DB0F /* Assets folder */,
-				69D307AE24EE07BE0077DB0F /* Property list */,
 			);
 			path = Symptracker;
 			sourceTree = "<group>";
@@ -136,14 +136,6 @@
 				695E83CE24E632EB00C8B817 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
-			sourceTree = "<group>";
-		};
-		69D307AE24EE07BE0077DB0F /* Property list */ = {
-			isa = PBXGroup;
-			children = (
-				695E83DA24E632F000C8B817 /* Info.plist */,
-			);
-			path = "Property list";
 			sourceTree = "<group>";
 		};
 		69D307AF24EE07CA0077DB0F /* Assets folder */ = {

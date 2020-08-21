@@ -28,9 +28,7 @@ class InfoNewsViewController: UIViewController{
         label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         label.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         label.text = "InfoNewsViewController"
-        func performSegue(withIdentifier identifier: "News",sender: Any?){
 
-        }
     }
     
 }

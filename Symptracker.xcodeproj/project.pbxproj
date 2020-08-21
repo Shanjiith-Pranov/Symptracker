@@ -16,8 +16,6 @@
 		69A0E62524ECB8F500CA6027 /* UISimpleSlidingTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62424ECB8F500CA6027 /* UISimpleSlidingTabController.swift */; };
 		69A0E62724ECB95000CA6027 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62624ECB95000CA6027 /* SettingsViewController.swift */; };
 		69A0E62924ECBA5700CA6027 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62824ECBA5700CA6027 /* InfoViewController.swift */; };
-		69A0E62B24ED4C5500CA6027 /* InfoGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62A24ED4C5500CA6027 /* InfoGraphViewController.swift */; };
-		69A0E62D24ED4C6D00CA6027 /* InfoNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62C24ED4C6D00CA6027 /* InfoNewsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +30,6 @@
 		69A0E62424ECB8F500CA6027 /* UISimpleSlidingTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISimpleSlidingTabController.swift; sourceTree = "<group>"; };
 		69A0E62624ECB95000CA6027 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		69A0E62824ECBA5700CA6027 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		69A0E62A24ED4C5500CA6027 /* InfoGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoGraphViewController.swift; sourceTree = "<group>"; };
-		69A0E62C24ED4C6D00CA6027 /* InfoNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoNewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +85,7 @@
 		69D307A824EE06B60077DB0F /* Info VIew controllers */ = {
 			isa = PBXGroup;
 			children = (
-				69A0E62A24ED4C5500CA6027 /* InfoGraphViewController.swift */,
 				69A0E62824ECBA5700CA6027 /* InfoViewController.swift */,
-				69A0E62C24ED4C6D00CA6027 /* InfoNewsViewController.swift */,
 			);
 			path = "Info VIew controllers";
 			sourceTree = "<group>";
@@ -222,9 +216,7 @@
 				695E83CD24E632EB00C8B817 /* AppDelegate.swift in Sources */,
 				69A0E62724ECB95000CA6027 /* SettingsViewController.swift in Sources */,
 				69A0E62924ECBA5700CA6027 /* InfoViewController.swift in Sources */,
-				69A0E62B24ED4C5500CA6027 /* InfoGraphViewController.swift in Sources */,
 				695E83CF24E632EB00C8B817 /* SceneDelegate.swift in Sources */,
-				69A0E62D24ED4C6D00CA6027 /* InfoNewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

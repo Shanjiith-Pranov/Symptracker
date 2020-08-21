@@ -17,10 +17,6 @@ class InfoGraphViewController: UIViewController{
         super.viewDidLoad()
         
         //setupUI()
-        func performSegue(withIdentifier identifier: "Graph",
-                          sender: nil){
-
-        }
 
     }
     

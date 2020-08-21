@@ -40,6 +40,7 @@ class InfoViewController: UISimpleSlidingTabController {
         setStyle(style: .fixed) // default fixed
         build() // build
     }
+
     
 
     /*

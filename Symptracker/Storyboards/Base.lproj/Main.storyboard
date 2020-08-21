@@ -71,10 +71,53 @@
                         <viewLayoutGuide key="safeArea" id="aX0-9k-f7S"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="info" catalog="system" id="3VM-5k-fZe"/>
+                    <connections>
+                        <segue destination="ny6-MV-3SB" kind="show" identifier="Graph" id="osr-9S-EF5"/>
+                        <segue destination="GO2-1k-07n" kind="show" identifier="News" id="44Z-Oj-jX6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fN-bb-5kU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1254" y="927"/>
+        </scene>
+        <!--Info Graph View Controller-->
+        <scene sceneID="3Iq-Qc-imW">
+            <objects>
+                <viewController id="ny6-MV-3SB" customClass="InfoGraphViewController" customModule="Symptracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WkH-SO-4Uo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6u-Mo-bcG">
+                                <rect key="frame" x="184" y="363" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="tlv-IG-7gu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JnV-LS-drb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oY9-JR-uc1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2122" y="894"/>
+        </scene>
+        <!--Info News View Controller-->
+        <scene sceneID="EvI-bE-EP7">
+            <objects>
+                <viewController id="GO2-1k-07n" customClass="InfoNewsViewController" customModule="Symptracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="elE-xi-4BR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bxi-DN-6Qn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4ls-UX-4VR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ItU-De-jSi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1893" y="1580"/>
         </scene>
     </scenes>
     <resources>

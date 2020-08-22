@@ -13,6 +13,7 @@
 		695E83D424E632EB00C8B817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 695E83D224E632EB00C8B817 /* Main.storyboard */; };
 		695E83D624E632F000C8B817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 695E83D524E632F000C8B817 /* Assets.xcassets */; };
 		695E83D924E632F000C8B817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 695E83D724E632F000C8B817 /* LaunchScreen.storyboard */; };
+		697032CC24F1299200B8E0E4 /* QuickAcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697032CB24F1299200B8E0E4 /* QuickAcessViewController.swift */; };
 		69A0E62524ECB8F500CA6027 /* UISimpleSlidingTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62424ECB8F500CA6027 /* UISimpleSlidingTabController.swift */; };
 		69A0E62724ECB95000CA6027 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62624ECB95000CA6027 /* SettingsViewController.swift */; };
 		69A0E62924ECBA5700CA6027 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62824ECBA5700CA6027 /* InfoViewController.swift */; };
@@ -27,6 +28,7 @@
 		695E83D524E632F000C8B817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		695E83D824E632F000C8B817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		695E83DA24E632F000C8B817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		697032CB24F1299200B8E0E4 /* QuickAcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuickAcessViewController.swift; path = Symptracker/Storyboards/QuickAcessViewController.swift; sourceTree = SOURCE_ROOT; };
 		69A0E62424ECB8F500CA6027 /* UISimpleSlidingTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISimpleSlidingTabController.swift; sourceTree = "<group>"; };
 		69A0E62624ECB95000CA6027 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		69A0E62824ECBA5700CA6027 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		69D307A724EE067F0077DB0F /* View controllers */ = {
 			isa = PBXGroup;
 			children = (
+				697032CB24F1299200B8E0E4 /* QuickAcessViewController.swift */,
 				69D307A824EE06B60077DB0F /* Info VIew controllers */,
 				69D307AB24EE07650077DB0F /* View controller */,
 				69D307A924EE06CA0077DB0F /* Settings view controller */,
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				695E83D124E632EB00C8B817 /* ViewController.swift in Sources */,
+				697032CC24F1299200B8E0E4 /* QuickAcessViewController.swift in Sources */,
 				69A0E62524ECB8F500CA6027 /* UISimpleSlidingTabController.swift in Sources */,
 				695E83CD24E632EB00C8B817 /* AppDelegate.swift in Sources */,
 				69A0E62724ECB95000CA6027 /* SettingsViewController.swift in Sources */,

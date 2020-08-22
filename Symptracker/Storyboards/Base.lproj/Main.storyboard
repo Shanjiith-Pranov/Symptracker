@@ -20,6 +20,7 @@
                     <connections>
                         <segue destination="ivo-dZ-AHO" kind="relationship" relationship="viewControllers" id="ZWh-Fo-TqI"/>
                         <segue destination="gPb-Te-L6o" kind="relationship" relationship="viewControllers" id="o99-kr-fAj"/>
+                        <segue destination="kE9-tm-2qC" kind="relationship" relationship="viewControllers" id="oi2-FF-cw5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQz-Ab-W60" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -41,6 +42,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZx-xP-Cct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1254" y="201"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="4oE-a6-CW2">
+            <objects>
+                <viewController id="kE9-tm-2qC" customClass="QuickAcessViewController" customModule="Symptracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5IF-d8-YGu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="B2y-Lo-o1Y"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Eoa-KQ-yEx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lmx-rk-oZw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152" y="918"/>
         </scene>
         <!--Info-->
         <scene sceneID="Beh-AG-xdp">

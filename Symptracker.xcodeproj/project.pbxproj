@@ -43,6 +43,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6901B45124F120AF005EFE95 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		6901B45224F120CC005EFE95 /* Dump - Might use later */ = {
+			isa = PBXGroup;
+			children = (
+				69D307AA24EE06D80077DB0F /* Slider class code */,
+			);
+			path = "Dump - Might use later";
+			sourceTree = "<group>";
+		};
 		695E83C024E632EB00C8B817 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +78,7 @@
 		695E83CB24E632EB00C8B817 /* Symptracker */ = {
 			isa = PBXGroup;
 			children = (
+				6901B45224F120CC005EFE95 /* Dump - Might use later */,
 				695E83DA24E632F000C8B817 /* Info.plist */,
 				69D307A724EE067F0077DB0F /* View controllers */,
 				69D307AC24EE07780077DB0F /* Storyboards */,
@@ -77,7 +93,6 @@
 				69D307A824EE06B60077DB0F /* Info VIew controllers */,
 				69D307AB24EE07650077DB0F /* View controller */,
 				69D307A924EE06CA0077DB0F /* Settings view controller */,
-				69D307AA24EE06D80077DB0F /* Slider class code */,
 			);
 			path = "View controllers";
 			sourceTree = "<group>";
@@ -126,6 +141,7 @@
 		69D307AD24EE07970077DB0F /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
+				6901B45124F120AF005EFE95 /* New Group */,
 				695E83CC24E632EB00C8B817 /* AppDelegate.swift */,
 				695E83CE24E632EB00C8B817 /* SceneDelegate.swift */,
 			);

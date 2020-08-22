@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InfoViewController: UISimpleSlidingTabController {
+class InfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

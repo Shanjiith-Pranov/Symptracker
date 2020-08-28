@@ -10,12 +10,35 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    @IBOutlet weak var GraphView: UIView!
+    @IBOutlet weak var NewsView: UIView!
+    @IBOutlet weak var ChooseGraphOrNews: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         
 
         // Do any additional setup after loading the view.
         
+    }
+    
+    @IBAction func segmentedCtrl(_ sender: UISegmentedControl) {
+        
+        switch sender.selectedSegmentIndex {
+        case 0:
+            GraphView.isHidden = false
+            NewsView.isHidden = true
+            
+            break
+            
+        case 1:
+            GraphView.isHidden = true
+            NewsView.isHidden = false
+            
+            break
+            
+        default:
+            break
+        }
     }
 
     

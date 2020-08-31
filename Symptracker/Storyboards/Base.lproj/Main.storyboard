@@ -252,7 +252,26 @@
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y7S-Qi-jQg" userLabel="Visur selector Table View">
                                                 <rect key="frame" x="0.0" y="4" width="240" height="379"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.70683340539135064" green="0.69658894727383602" blue="0.61736082243042023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="Persian Green"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="virusCells" id="yhC-xu-057" customClass="VirusTableViewCell" customModule="Symptracker" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="28" width="240" height="43.5"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yhC-xu-057" id="TCM-o1-4bb">
+                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffR-hK-Cn3">
+                                                                    <rect key="frame" x="0.0" y="3" width="240" height="31"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </tableViewCellContentView>
+                                                    </tableViewCell>
+                                                </prototypes>
                                             </tableView>
                                         </subviews>
                                         <color key="backgroundColor" name="Persian Green"/>
@@ -273,6 +292,7 @@
                         <outlet property="news" destination="8V9-t7-yJL" id="yvN-ew-Nsc"/>
                         <outlet property="tap" destination="RIs-zt-f6e" id="hdW-qG-nK3"/>
                         <outlet property="virusSelector" destination="aWo-Tv-4oF" id="HI8-gT-W3H"/>
+                        <outlet property="virusTable" destination="y7S-Qi-jQg" id="LIn-V6-DlC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lmx-rk-oZw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -282,7 +302,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="183" y="1107"/>
+            <point key="canvasLocation" x="182.60869565217394" y="1106.9196428571429"/>
         </scene>
         <!--Info-->
         <scene sceneID="Beh-AG-xdp">

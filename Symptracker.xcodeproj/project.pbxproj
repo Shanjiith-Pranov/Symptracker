@@ -17,6 +17,7 @@
 		69A0E62524ECB8F500CA6027 /* UISimpleSlidingTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62424ECB8F500CA6027 /* UISimpleSlidingTabController.swift */; };
 		69A0E62724ECB95000CA6027 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62624ECB95000CA6027 /* SettingsViewController.swift */; };
 		69A0E62924ECBA5700CA6027 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62824ECBA5700CA6027 /* InfoViewController.swift */; };
+		69F2677F24FD2DC70047330A /* VirusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F2677E24FD2DC70047330A /* VirusTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		69A0E62424ECB8F500CA6027 /* UISimpleSlidingTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISimpleSlidingTabController.swift; sourceTree = "<group>"; };
 		69A0E62624ECB95000CA6027 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		69A0E62824ECBA5700CA6027 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		69F2677E24FD2DC70047330A /* VirusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirusTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		69D307A724EE067F0077DB0F /* View controllers */ = {
 			isa = PBXGroup;
 			children = (
+				69F2677E24FD2DC70047330A /* VirusTableViewCell.swift */,
 				697032CB24F1299200B8E0E4 /* QuickAcessViewController.swift */,
 				69D307A824EE06B60077DB0F /* Info VIew controllers */,
 				69D307AB24EE07650077DB0F /* View controller */,
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				695E83D124E632EB00C8B817 /* ViewController.swift in Sources */,
+				69F2677F24FD2DC70047330A /* VirusTableViewCell.swift in Sources */,
 				697032CC24F1299200B8E0E4 /* QuickAcessViewController.swift in Sources */,
 				69A0E62524ECB8F500CA6027 /* UISimpleSlidingTabController.swift in Sources */,
 				695E83CD24E632EB00C8B817 /* AppDelegate.swift in Sources */,

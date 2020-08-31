@@ -10,11 +10,23 @@ import UIKit
 
 class QuickAcessViewController: UIViewController {
 
+    @IBOutlet var tap: UITapGestureRecognizer!
+    @IBOutlet weak var news: UITableView!
+    @IBOutlet weak var cases: UIView!
+    @IBOutlet weak var virusSelector: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        virusSelector.isHidden = true
+        
     }
+    
+    @IBAction func tapped(_ sender: Any) {
+        virusSelector.isHidden = false
+    }
+    
+
     
 
     /*

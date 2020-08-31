@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +21,7 @@
                     <connections>
                         <segue destination="aBh-rz-fZY" kind="relationship" relationship="viewControllers" id="qUa-aU-bns"/>
                         <segue destination="tMX-0W-agD" kind="relationship" relationship="viewControllers" id="Cub-WZ-oB0"/>
-                        <segue destination="FFm-7U-nfw" kind="relationship" relationship="viewControllers" destinationCreationSelector="hm" id="wpA-Y7-qKy"/>
+                        <segue destination="FFm-7U-nfw" kind="relationship" relationship="viewControllers" destinationCreationSelector="First" id="wpA-Y7-qKy"/>
                         <segue destination="yX7-lu-cYo" kind="relationship" relationship="viewControllers" id="fty-yf-Z8e"/>
                         <segue destination="jrF-5K-eZa" kind="relationship" relationship="viewControllers" id="tNa-dA-Vpv"/>
                     </connections>
@@ -32,11 +33,14 @@
         <!--Settings View Controller-->
         <scene sceneID="BCo-B2-HXv">
             <objects>
-                <tableViewController id="7xX-qZ-Lws" userLabel="Settings View Controller" customClass="SettingsViewController" customModule="Symptracker" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Settings" id="7xX-qZ-Lws" userLabel="Settings View Controller" customClass="SettingsViewController" customModule="Symptracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="54K-7N-Tvw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="Beige"/>
+                        <color key="tintColor" name="Bittersweet"/>
+                        <color key="separatorColor" name="Bittersweet"/>
+                        <color key="sectionIndexBackgroundColor" name="Beige"/>
                         <sections>
                             <tableViewSection id="c21-SK-aji" userLabel="Profile">
                                 <cells>
@@ -118,7 +122,8 @@
                     <view key="view" contentMode="scaleToFill" id="zaE-Q4-MmV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="Beige"/>
+                        <color key="tintColor" name="Bittersweet"/>
                         <viewLayoutGuide key="safeArea" id="UUn-D1-L5s"/>
                     </view>
                     <navigationItem key="navigationItem" id="npt-0P-dtR"/>
@@ -134,7 +139,8 @@
                     <view key="view" contentMode="scaleToFill" id="yoL-o1-h1S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="Beige"/>
+                        <color key="tintColor" name="Bittersweet"/>
                         <viewLayoutGuide key="safeArea" id="uyE-rY-ylQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="7By-Br-jFk"/>
@@ -150,7 +156,8 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kYD-gK-dmu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="Beige"/>
+                        <color key="tintColor" name="Bittersweet"/>
                         <sections>
                             <tableViewSection id="p4z-ca-gKc">
                                 <cells>
@@ -195,11 +202,13 @@
         <!--Settings-->
         <scene sceneID="al2-gM-3og">
             <objects>
-                <navigationController id="jrF-5K-eZa" sceneMemberID="viewController">
+                <navigationController title="Settings" id="jrF-5K-eZa" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" id="zDF-hw-gKv"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wsa-2h-p0M">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Beige"/>
+                        <color key="tintColor" name="Bittersweet"/>
                     </navigationBar>
                     <connections>
                         <segue destination="7xX-qZ-Lws" kind="relationship" relationship="rootViewController" id="29d-IM-CBw"/>
@@ -209,10 +218,10 @@
             </objects>
             <point key="canvasLocation" x="2212" y="354"/>
         </scene>
-        <!--Quick Acess View Controller-->
+        <!--Quick Access-->
         <scene sceneID="4oE-a6-CW2">
             <objects>
-                <viewController id="kE9-tm-2qC" customClass="QuickAcessViewController" customModule="Symptracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Quick Access" id="kE9-tm-2qC" customClass="QuickAcessViewController" customModule="Symptracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5IF-d8-YGu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,12 +233,17 @@
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ITV-cA-A92" userLabel="Cases view">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="182"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" name="Persian Green"/>
+                                        <color key="tintColor" name="Bittersweet"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="RIs-zt-f6e" appends="YES" id="Qh7-lA-cvk"/>
+                                        </connections>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8V9-t7-yJL" userLabel="News View">
                                         <rect key="frame" x="0.0" y="186" width="414" height="583"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" name="Beige"/>
                                     </tableView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aWo-Tv-4oF" userLabel="Virus selector view">
                                         <rect key="frame" x="87" y="112" width="240" height="387"/>
@@ -238,29 +252,42 @@
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y7S-Qi-jQg" userLabel="Visur selector Table View">
                                                 <rect key="frame" x="0.0" y="4" width="240" height="379"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" red="0.70683340539135064" green="0.69658894727383602" blue="0.61736082243042023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </tableView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" name="Persian Green"/>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" name="Beige"/>
+                                <color key="tintColor" name="Bittersweet"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="2KE-61-E1T"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="3he-Np-381"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="Beige"/>
                         <viewLayoutGuide key="safeArea" id="B2y-Lo-o1Y"/>
                     </view>
                     <navigationItem key="navigationItem" id="WTC-Um-cVZ"/>
+                    <connections>
+                        <outlet property="cases" destination="ITV-cA-A92" id="7XH-MC-pc3"/>
+                        <outlet property="news" destination="8V9-t7-yJL" id="yvN-ew-Nsc"/>
+                        <outlet property="tap" destination="RIs-zt-f6e" id="hdW-qG-nK3"/>
+                        <outlet property="virusSelector" destination="aWo-Tv-4oF" id="HI8-gT-W3H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lmx-rk-oZw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RIs-zt-f6e">
+                    <connections>
+                        <action selector="tapped:" destination="kE9-tm-2qC" id="E3D-u9-h14"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="183" y="1107"/>
         </scene>
-        <!--Info View Controller-->
+        <!--Info-->
         <scene sceneID="Beh-AG-xdp">
             <objects>
-                <viewController id="ivo-dZ-AHO" customClass="InfoViewController" customModule="Symptracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Info" id="ivo-dZ-AHO" customClass="InfoViewController" customModule="Symptracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jfl-9F-UFM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -268,20 +295,24 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9MJ-Vc-sWG" userLabel="News view">
                                 <rect key="frame" x="0.0" y="127" width="414" height="686"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" name="Beige"/>
+                                <color key="tintColor" name="Bittersweet"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aRa-fi-OOl" userLabel="Graph view">
                                 <rect key="frame" x="0.0" y="127" width="414" height="686"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" name="Beige"/>
+                                <color key="tintColor" name="Bittersweet"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mc0-Je-if5">
                                 <rect key="frame" x="20" y="88" width="374" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Bittersweet"/>
                                 <segments>
                                     <segment title="Graph"/>
                                     <segment title="News"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" name="Beige"/>
                                 <connections>
                                     <action selector="segmentedCtrl:" destination="ivo-dZ-AHO" eventType="valueChanged" id="zwD-gD-EPm"/>
                                 </connections>
@@ -301,14 +332,15 @@
             </objects>
             <point key="canvasLocation" x="1285.5072463768117" y="1106.9196428571429"/>
         </scene>
-        <!--View Controller-->
+        <!--Tracker-->
         <scene sceneID="bbW-Zb-YhN">
             <objects>
-                <viewController id="t35-Iq-5fq" sceneMemberID="viewController">
+                <viewController title="Tracker" id="t35-Iq-5fq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lYR-g9-WNL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="Beige"/>
+                        <color key="tintColor" name="Bittersweet"/>
                         <viewLayoutGuide key="safeArea" id="CSr-2x-9gx"/>
                     </view>
                     <navigationItem key="navigationItem" id="07a-FR-9T8"/>
@@ -317,15 +349,17 @@
             </objects>
             <point key="canvasLocation" x="-870" y="1107"/>
         </scene>
-        <!--Quick Acess-->
+        <!--Quick Access-->
         <scene sceneID="3nf-Vn-nQR">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FFm-7U-nfw" sceneMemberID="viewController">
+                <navigationController title="Quick Access" automaticallyAdjustsScrollViewInsets="NO" id="FFm-7U-nfw" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Quick Acess" id="Eoa-KQ-yEx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pZm-mX-h7b">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Beige"/>
+                        <color key="tintColor" name="Bittersweet"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -339,12 +373,14 @@
         <!--Info-->
         <scene sceneID="QNb-vt-8rM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yX7-lu-cYo" sceneMemberID="viewController">
+                <navigationController title="Info" automaticallyAdjustsScrollViewInsets="NO" id="yX7-lu-cYo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Info" image="info" catalog="system" id="3VM-5k-fZe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VDJ-MO-reH">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Beige"/>
+                        <color key="tintColor" name="Bittersweet"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -355,14 +391,15 @@
             </objects>
             <point key="canvasLocation" x="1286" y="354"/>
         </scene>
-        <!--View Controller-->
+        <!--Hospitals-->
         <scene sceneID="AOP-BN-oj3">
             <objects>
-                <viewController id="OuL-KW-nf5" sceneMemberID="viewController">
+                <viewController title="Hospitals" id="OuL-KW-nf5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eQH-57-cbR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="Beige"/>
+                        <color key="tintColor" name="Bittersweet"/>
                         <viewLayoutGuide key="safeArea" id="PQR-Z7-8bD"/>
                     </view>
                     <navigationItem key="navigationItem" id="7cP-6L-gIh"/>
@@ -374,12 +411,14 @@
         <!--Tracker-->
         <scene sceneID="Zl8-sS-8kd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tMX-0W-agD" sceneMemberID="viewController">
+                <navigationController title="Tracker" automaticallyAdjustsScrollViewInsets="NO" id="tMX-0W-agD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Tracker" id="dZD-sE-rTZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gC1-cI-wGM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Beige"/>
+                        <color key="tintColor" name="Bittersweet"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -393,12 +432,14 @@
         <!--Hospitals-->
         <scene sceneID="vcn-iG-azM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aBh-rz-fZY" sceneMemberID="viewController">
+                <navigationController title="Hospitals" automaticallyAdjustsScrollViewInsets="NO" id="aBh-rz-fZY" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Hospitals" id="r1V-aO-RSU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UYn-Y2-kfc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Beige"/>
+                        <color key="tintColor" name="Bittersweet"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -412,5 +453,14 @@
     </scenes>
     <resources>
         <image name="info" catalog="system" width="93" height="128"/>
+        <namedColor name="Beige">
+            <color red="0.93333333333333335" green="0.92156862745098034" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Bittersweet">
+            <color red="1" green="0.44299998879432678" blue="0.35699999332427979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Persian Green">
+            <color red="0.11800000071525574" green="0.6589999794960022" blue="0.58799999952316284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

@@ -45,13 +45,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6901B45124F120AF005EFE95 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		6901B45224F120CC005EFE95 /* Dump - Might use later */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +137,6 @@
 		69D307AD24EE07970077DB0F /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				6901B45124F120AF005EFE95 /* New Group */,
 				695E83CC24E632EB00C8B817 /* AppDelegate.swift */,
 				695E83CE24E632EB00C8B817 /* SceneDelegate.swift */,
 			);

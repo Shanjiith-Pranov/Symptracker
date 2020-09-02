@@ -10,50 +10,77 @@ import UIKit
 
 
 
-class QuickAcessViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
+class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    //,UITableViewDelegate, UITableViewDataSource
     
     
     var viruses = ["Covid","Hello","oh no its corona time"]
     var facts = true
+    var currentVirus = ""
 
+    @IBOutlet weak var currentVirusText: UILabel!
     @IBOutlet var tap: UITapGestureRecognizer!
     @IBOutlet weak var news: UITableView!
     @IBOutlet weak var cases: UIView!
-    @IBOutlet weak var virusTable: UITableView!
+    @IBOutlet weak var selector: UIView!
+    
+    @IBOutlet weak var selectorPicker: UIPickerView!
+    @IBOutlet weak var done: UIButton!
     @IBOutlet weak var newsTable: UITableView!
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
+        return viruses.count
+        
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        currentVirus = viruses[row]
+        return viruses[row]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        virusTable.isHidden = true
+        selector.isHidden = true
         
+        selectorPicker.delegate = self
+        selectorPicker.dataSource = self
+        currentVirusText.text = currentVirus
         
     }
     
     @IBAction func tapped(_ sender: Any) {
-//        if facts { virusTable.isHidden = false } else { virusTable.isHidden = true }
-//        facts = !facts
+        selector.isHidden = false
     }
+    
+    @IBAction func doneButtonTapped(_ sender: Any) {
+        selector.isHidden = true
+        print(currentVirus)
+        currentVirusText.text = currentVirus
+    }
+    
 
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return 1
+//    }
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 1
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        return UITableViewCell
+//    }
+    
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viruses.count
-    }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "virusCell", for: indexPath)
-
-        if let cell = cell as? VirusTableViewCell{
-               cell.virus.text = "\(viruses[indexPath.row])"
-        } else if let cell = cell as? NewsTableViewController{
-        }
-
-        return cell
-    }
 
     
     

@@ -15,7 +15,7 @@ class CreditsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        credits.text = ""
+        credits.text = "I would like to thank everyone for working in this project( the group. \n idk what to write for the credits"
     }
     
 

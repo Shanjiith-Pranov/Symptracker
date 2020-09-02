@@ -11,8 +11,7 @@ import SafariServices
 
 class TrackerViewController: UIViewController {
     
-    let questions = [Questions(
-    ]
+    let questions = [Questions(question: "Is you ok?", yesOrNo: true, button1Text: "Yes", button2Text: "-", button3Text: "No", button4Text: "-")]
 
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!

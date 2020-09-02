@@ -10,8 +10,9 @@ import Foundation
 
 struct Questions {
     var question: String
-    var button1: Bool
-    var button2: Bool
-    var button3: Bool
-    var button4: Bool
+    var yesOrNo: Bool
+    var button1Text: String
+    var button2Text: String
+    var button3Text: String
+    var button4Text: String
 }

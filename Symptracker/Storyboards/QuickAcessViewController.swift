@@ -3,57 +3,58 @@
 //  Symptracker
 //
 //  Created by Shanjiith Pranov on 22/8/20.
-//  Copyright © 2020 sst. All rights reserved.
+//  Copyright :copyright: 2020 sst. All rights reserved.
 //
 
 import UIKit
 
-class QuickAcessViewController: UIViewController {
+
+
+class QuickAcessViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
     
     var viruses = ["Covid","Hello","oh no its corona time"]
+    var facts = true
 
     @IBOutlet var tap: UITapGestureRecognizer!
     @IBOutlet weak var news: UITableView!
     @IBOutlet weak var cases: UIView!
-    @IBOutlet weak var virusSelector: UIView!
     @IBOutlet weak var virusTable: UITableView!
+    @IBOutlet weak var newsTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        virusSelector.isHidden = true
+//        virusTable.isHidden = true
+        
+        
     }
     
     @IBAction func tapped(_ sender: Any) {
-        virusSelector.isHidden = false
+//        if facts { virusTable.isHidden = false } else { virusTable.isHidden = true }
+//        facts = !facts
     }
+
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viruses.count
     }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "virusCells", for: indexPath)
 
-        let currentVirus = viruses[indexPath.row]
-        if let cell = cell as? Virus{
-            cell.nameLabel.text = currentFriend.name
-            cell.ageLabel.text = "\(currentFriend.age)"
-            cell.schoolLabel.text = currentFriend.school
-            cell.profileImageView.image = UIImage(named: currentFriend.imageName)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "virusCell", for: indexPath)
+
+        if let cell = cell as? VirusTableViewCell{
+               cell.virus.text = "\(viruses[indexPath.row])"
+        } else if let cell = cell as? NewsTableViewController{
         }
 
         return cell
     }
+
     
     
 

@@ -1,17 +1,15 @@
 //
-//  VirusTableViewCell.swift
+//  NewsTableViewCell.swift
 //  Symptracker
 //
-//  Created by Shanjiith Pranov on 31/8/20.
+//  Created by Shanjiith Pranov on 1/9/20.
 //  Copyright © 2020 sst. All rights reserved.
 //
 
 import UIKit
 
-class VirusTableViewCell: UITableViewCell {
+class NewsTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var virus: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,8 +20,5 @@ class VirusTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    
-    
 
 }

@@ -135,15 +135,32 @@
         <!--Credits-->
         <scene sceneID="95v-ni-Aeb">
             <objects>
-                <viewController title="Credits" id="JU0-z1-f1U" sceneMemberID="viewController">
+                <viewController title="Credits" id="JU0-z1-f1U" customClass="CreditsViewController" customModule="Symptracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yoL-o1-h1S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkJ-Ty-xXU">
+                                <rect key="frame" x="10" y="98" width="394" height="705"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" name="Davys Grey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" name="Beige"/>
                         <color key="tintColor" name="Bittersweet"/>
+                        <constraints>
+                            <constraint firstItem="gkJ-Ty-xXU" firstAttribute="top" secondItem="uyE-rY-ylQ" secondAttribute="top" constant="10" id="OAT-Lu-9Pv"/>
+                            <constraint firstItem="uyE-rY-ylQ" firstAttribute="trailing" secondItem="gkJ-Ty-xXU" secondAttribute="trailing" constant="10" id="qn7-9J-nor"/>
+                            <constraint firstItem="uyE-rY-ylQ" firstAttribute="bottom" secondItem="gkJ-Ty-xXU" secondAttribute="bottom" constant="10" id="sDF-Yh-bhh"/>
+                            <constraint firstItem="gkJ-Ty-xXU" firstAttribute="leading" secondItem="uyE-rY-ylQ" secondAttribute="leading" constant="10" id="vbd-VS-XWc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uyE-rY-ylQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="7By-Br-jFk"/>
+                    <connections>
+                        <outlet property="credits" destination="gkJ-Ty-xXU" id="Td6-q6-O3y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UED-YW-Jsv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -244,38 +261,44 @@
                                         <rect key="frame" x="0.0" y="186" width="414" height="583"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" name="Beige"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="news" id="Idn-TO-4p9" customClass="NewsTableViewCell" customModule="Symptracker" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Idn-TO-4p9" id="sUx-ox-yZx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
                                     </tableView>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aWo-Tv-4oF" userLabel="Virus selector view">
-                                        <rect key="frame" x="87" y="112" width="240" height="387"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y7S-Qi-jQg" userLabel="Visur selector Table View">
+                                        <rect key="frame" x="87" y="151" width="240" height="379"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y7S-Qi-jQg" userLabel="Visur selector Table View">
-                                                <rect key="frame" x="0.0" y="4" width="240" height="379"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" name="Persian Green"/>
-                                                <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="virusCells" id="yhC-xu-057" customClass="VirusTableViewCell" customModule="Symptracker" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="28" width="240" height="43.5"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yhC-xu-057" id="TCM-o1-4bb">
-                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                        <color key="backgroundColor" name="Purple Navy"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="virusCell" textLabel="SyO-HS-TgF" style="IBUITableViewCellStyleDefault" id="yhC-xu-057" customClass="VirusTableViewCell" customModule="Symptracker" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="240" height="43.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yhC-xu-057" id="TCM-o1-4bb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SyO-HS-TgF">
+                                                            <rect key="frame" x="16" y="0.0" width="208" height="43.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffR-hK-Cn3">
-                                                                    <rect key="frame" x="0.0" y="3" width="240" height="31"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                        </tableViewCellContentView>
-                                                    </tableViewCell>
-                                                </prototypes>
-                                            </tableView>
-                                        </subviews>
-                                        <color key="backgroundColor" name="Persian Green"/>
-                                    </view>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" name="Davys Grey"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="virus" destination="SyO-HS-TgF" id="Bk8-7j-LnO"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" name="Beige"/>
                                 <color key="tintColor" name="Bittersweet"/>
@@ -290,8 +313,8 @@
                     <connections>
                         <outlet property="cases" destination="ITV-cA-A92" id="7XH-MC-pc3"/>
                         <outlet property="news" destination="8V9-t7-yJL" id="yvN-ew-Nsc"/>
+                        <outlet property="newsTable" destination="8V9-t7-yJL" id="VDM-AZ-dTG"/>
                         <outlet property="tap" destination="RIs-zt-f6e" id="hdW-qG-nK3"/>
-                        <outlet property="virusSelector" destination="aWo-Tv-4oF" id="HI8-gT-W3H"/>
                         <outlet property="virusTable" destination="y7S-Qi-jQg" id="LIn-V6-DlC"/>
                     </connections>
                 </viewController>
@@ -321,6 +344,12 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aRa-fi-OOl" userLabel="Graph view">
                                 <rect key="frame" x="0.0" y="127" width="414" height="686"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="rGp-uf-TZg">
+                                        <rect key="frame" x="8" y="8" width="398" height="670"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" name="Beige"/>
                                 <color key="tintColor" name="Bittersweet"/>
                             </view>
@@ -355,19 +384,84 @@
         <!--Tracker-->
         <scene sceneID="bbW-Zb-YhN">
             <objects>
-                <viewController title="Tracker" id="t35-Iq-5fq" sceneMemberID="viewController">
+                <viewController title="Tracker" id="t35-Iq-5fq" customClass="TrackerViewController" customModule="Symptracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lYR-g9-WNL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="O6K-bK-fs3">
+                                <rect key="frame" x="50" y="258" width="314" height="505"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qm-l5-leD">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="96.5"/>
+                                        <color key="backgroundColor" name="Persian Green"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" name="Davys Grey"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p8-yU-GLn">
+                                        <rect key="frame" x="0.0" y="136.5" width="314" height="96"/>
+                                        <color key="backgroundColor" name="Persian Green"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" name="Davys Grey"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bn2-Xt-ueg">
+                                        <rect key="frame" x="0.0" y="272.5" width="314" height="96.5"/>
+                                        <color key="backgroundColor" name="Persian Green"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" name="Davys Grey"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBf-Qo-5sy">
+                                        <rect key="frame" x="0.0" y="409" width="314" height="96"/>
+                                        <color key="backgroundColor" name="Persian Green"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" name="Davys Grey"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7qm-l5-leD" firstAttribute="height" secondItem="Bn2-Xt-ueg" secondAttribute="height" id="3tR-oR-FbZ"/>
+                                    <constraint firstItem="7qm-l5-leD" firstAttribute="height" secondItem="0p8-yU-GLn" secondAttribute="height" id="Pcy-FO-VV6"/>
+                                    <constraint firstItem="7qm-l5-leD" firstAttribute="height" secondItem="tBf-Qo-5sy" secondAttribute="height" id="ZSb-JH-gZP"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yc-Vt-0Ac">
+                                <rect key="frame" x="20" y="107" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="qzK-zK-yTV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="Purple Navy"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" name="Beige"/>
                         <color key="tintColor" name="Bittersweet"/>
+                        <constraints>
+                            <constraint firstItem="CSr-2x-9gx" firstAttribute="trailing" secondItem="O6K-bK-fs3" secondAttribute="trailing" constant="50" id="DOe-8A-xJ3"/>
+                            <constraint firstItem="CSr-2x-9gx" firstAttribute="trailing" secondItem="7yc-Vt-0Ac" secondAttribute="trailing" constant="20" id="Gqp-bZ-zEM"/>
+                            <constraint firstItem="7yc-Vt-0Ac" firstAttribute="leading" secondItem="CSr-2x-9gx" secondAttribute="leading" constant="20" id="NXN-yL-m1j"/>
+                            <constraint firstItem="O6K-bK-fs3" firstAttribute="top" secondItem="7yc-Vt-0Ac" secondAttribute="bottom" constant="50" id="f54-UY-ucs"/>
+                            <constraint firstItem="CSr-2x-9gx" firstAttribute="bottom" secondItem="O6K-bK-fs3" secondAttribute="bottom" constant="50" id="fjP-4o-d5S"/>
+                            <constraint firstItem="O6K-bK-fs3" firstAttribute="top" secondItem="7yc-Vt-0Ac" secondAttribute="bottom" constant="50" id="lBI-y4-q8R"/>
+                            <constraint firstItem="O6K-bK-fs3" firstAttribute="leading" secondItem="CSr-2x-9gx" secondAttribute="leading" constant="50" id="lEo-8w-tQO"/>
+                            <constraint firstItem="7yc-Vt-0Ac" firstAttribute="top" secondItem="CSr-2x-9gx" secondAttribute="top" constant="20" id="xCz-Yf-vLN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="CSr-2x-9gx"/>
                     </view>
                     <navigationItem key="navigationItem" id="07a-FR-9T8"/>
+                    <connections>
+                        <outlet property="button1" destination="7qm-l5-leD" id="8Gn-0y-Dol"/>
+                        <outlet property="button2" destination="0p8-yU-GLn" id="qp6-89-1Ca"/>
+                        <outlet property="button3" destination="Bn2-Xt-ueg" id="Esd-6o-V3h"/>
+                        <outlet property="button4" destination="tBf-Qo-5sy" id="dNx-W8-zIO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xNJ-of-8xL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-870" y="1107"/>
+            <point key="canvasLocation" x="-871.01449275362324" y="1106.9196428571429"/>
         </scene>
         <!--Quick Access-->
         <scene sceneID="3nf-Vn-nQR">
@@ -414,12 +508,23 @@
         <!--Hospitals-->
         <scene sceneID="AOP-BN-oj3">
             <objects>
-                <viewController title="Hospitals" id="OuL-KW-nf5" sceneMemberID="viewController">
+                <viewController title="Hospitals" id="OuL-KW-nf5" customClass="HospitalsViewController" customModule="Symptracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eQH-57-cbR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2020-09-01 at 9.37.20 PM" translatesAutoresizingMaskIntoConstraints="NO" id="UqW-SY-2DH">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" name="Beige"/>
                         <color key="tintColor" name="Bittersweet"/>
+                        <constraints>
+                            <constraint firstItem="UqW-SY-2DH" firstAttribute="leading" secondItem="PQR-Z7-8bD" secondAttribute="leading" id="H8F-ee-lik"/>
+                            <constraint firstItem="PQR-Z7-8bD" firstAttribute="bottom" secondItem="UqW-SY-2DH" secondAttribute="bottom" id="OKa-lY-b26"/>
+                            <constraint firstItem="UqW-SY-2DH" firstAttribute="top" secondItem="PQR-Z7-8bD" secondAttribute="top" id="QPI-0f-mf9"/>
+                            <constraint firstItem="PQR-Z7-8bD" firstAttribute="trailing" secondItem="UqW-SY-2DH" secondAttribute="trailing" id="qx4-gt-ae8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQR-Z7-8bD"/>
                     </view>
                     <navigationItem key="navigationItem" id="7cP-6L-gIh"/>
@@ -472,15 +577,23 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image-1" width="216" height="319"/>
+        <image name="Screenshot 2020-09-01 at 9.37.20 PM" width="412" height="722"/>
         <image name="info" catalog="system" width="93" height="128"/>
         <namedColor name="Beige">
-            <color red="0.93333333333333335" green="0.92156862745098034" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.93300002813339233" green="0.92199999094009399" blue="0.81599998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Bittersweet">
             <color red="1" green="0.44299998879432678" blue="0.35699999332427979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="Davys Grey">
+            <color red="0.29800000786781311" green="0.32899999618530273" blue="0.32899999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Persian Green">
             <color red="0.11800000071525574" green="0.6589999794960022" blue="0.58799999952316284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Purple Navy">
+            <color red="0.36899998784065247" green="0.32899999618530273" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

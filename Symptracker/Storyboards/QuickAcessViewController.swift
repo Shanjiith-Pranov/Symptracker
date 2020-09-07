@@ -14,14 +14,28 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
     //,UITableViewDelegate, UITableViewDataSource
     
     
-    var viruses = ["Covid","Hello","oh no its corona time"]
+    var viruses = [Viruses(name: "Covid-19", cases: 57022, deaths: 27, change: 34, local: 3, imported: 2),Viruses(name: "Dengue", cases: 17249, deaths: 19, change: 76, local: 0, imported: 0),Viruses(name: "Zika", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Hand, Foot and Mouth Disease", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Yellow Fever", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Ebola", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Influenza", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Avian Influenza", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Tuberculosis", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Novel Coronavirus Infection (MERS-COV)", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Norovirus Gastroenteritis (Gastric Flu)", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Hepatitis A", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Hepatitis E", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Hepatitis B", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Hepatitis C", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Campylobacteriosis", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Chikungunya Fever", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Conjunctivitis", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Mumps", cases: 0, deaths: 0, change: 0, local: 0, imported: 0)
+    ]
+    
     var facts = true
-    var currentVirus = ""
+    var currentVirus = 0
+    @IBOutlet weak var cases: UILabel!
+    @IBOutlet weak var casesInt: UILabel!
+    @IBOutlet weak var deaths: UILabel!
+    @IBOutlet weak var deathsInt: UILabel!
+    @IBOutlet weak var change: UILabel!
+    @IBOutlet weak var changeInt: UILabel!
+    @IBOutlet weak var local: UILabel!
+    @IBOutlet weak var localInt: UILabel!
+    @IBOutlet weak var imported: UILabel!
+    @IBOutlet weak var importedInt: UILabel!
+    
+    
 
     @IBOutlet weak var currentVirusText: UILabel!
     @IBOutlet var tap: UITapGestureRecognizer!
     @IBOutlet weak var news: UITableView!
-    @IBOutlet weak var cases: UIView!
+    @IBOutlet weak var casesUIView: UIView!
     @IBOutlet weak var selector: UIView!
     
     @IBOutlet weak var selectorPicker: UIPickerView!
@@ -39,8 +53,8 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        currentVirus = viruses[row]
-        return viruses[row]
+        currentVirus = row
+        return viruses[row].name
     }
     
     override func viewDidLoad() {
@@ -51,18 +65,20 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
         
         selectorPicker.delegate = self
         selectorPicker.dataSource = self
-        currentVirusText.text = currentVirus
+        currentVirusText.text = viruses[currentVirus].name
         
     }
     
     @IBAction func tapped(_ sender: Any) {
         selector.isHidden = false
+        
     }
     
     @IBAction func doneButtonTapped(_ sender: Any) {
         selector.isHidden = true
         print(currentVirus)
-        currentVirusText.text = currentVirus
+        currentVirusText.text = viruses[currentVirus].name
+        casesInt.text = String(viruses[currentVirus].cases)
     }
     
 

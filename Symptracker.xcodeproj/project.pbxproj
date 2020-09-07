@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		693D8CE525012D2900EAC69B /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693D8CE425012D2900EAC69B /* EditProfileTableViewController.swift */; };
 		695E83CD24E632EB00C8B817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E83CC24E632EB00C8B817 /* AppDelegate.swift */; };
 		695E83CF24E632EB00C8B817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E83CE24E632EB00C8B817 /* SceneDelegate.swift */; };
 		695E83D124E632EB00C8B817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E83D024E632EB00C8B817 /* ViewController.swift */; };
@@ -19,14 +20,16 @@
 		697317B724FE8CBF008CF53E /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697317B624FE8CBE008CF53E /* CreditsViewController.swift */; };
 		697317B924FE9001008CF53E /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697317B824FE9001008CF53E /* NewsTableViewCell.swift */; };
 		697317BB24FF2C0E008CF53E /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697317BA24FF2C0E008CF53E /* Questions.swift */; };
+		6997D0BA2504DA6600667CAC /* Viruses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997D0B92504DA6500667CAC /* Viruses.swift */; };
+		6997D0BE2505FF3C00667CAC /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997D0BD2505FF3C00667CAC /* LaunchScreenViewController.swift */; };
 		69A0E62524ECB8F500CA6027 /* UISimpleSlidingTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62424ECB8F500CA6027 /* UISimpleSlidingTabController.swift */; };
 		69A0E62724ECB95000CA6027 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62624ECB95000CA6027 /* SettingsViewController.swift */; };
 		69A0E62924ECBA5700CA6027 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62824ECBA5700CA6027 /* InfoViewController.swift */; };
 		69D2612F24FF306100D39B3B /* SelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D2612E24FF306100D39B3B /* SelectTableViewController.swift */; };
-		69F2677F24FD2DC70047330A /* VirusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F2677E24FD2DC70047330A /* VirusTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		693D8CE425012D2900EAC69B /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditProfileTableViewController.swift; path = Symptracker/Storyboards/EditProfileTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		695E83C924E632EB00C8B817 /* Symptracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Symptracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		695E83CC24E632EB00C8B817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		695E83CE24E632EB00C8B817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,11 +44,12 @@
 		697317B624FE8CBE008CF53E /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreditsViewController.swift; path = Symptracker/Storyboards/CreditsViewController.swift; sourceTree = SOURCE_ROOT; };
 		697317B824FE9001008CF53E /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		697317BA24FF2C0E008CF53E /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		6997D0B92504DA6500667CAC /* Viruses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viruses.swift; sourceTree = "<group>"; };
+		6997D0BD2505FF3C00667CAC /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		69A0E62424ECB8F500CA6027 /* UISimpleSlidingTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISimpleSlidingTabController.swift; sourceTree = "<group>"; };
 		69A0E62624ECB95000CA6027 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		69A0E62824ECBA5700CA6027 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		69D2612E24FF306100D39B3B /* SelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTableViewController.swift; sourceTree = "<group>"; };
-		69F2677E24FD2DC70047330A /* VirusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirusTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,13 @@
 		69D307A724EE067F0077DB0F /* View controllers */ = {
 			isa = PBXGroup;
 			children = (
+				693D8CE425012D2900EAC69B /* EditProfileTableViewController.swift */,
+				6997D0B92504DA6500667CAC /* Viruses.swift */,
 				697317B624FE8CBE008CF53E /* CreditsViewController.swift */,
 				697317B824FE9001008CF53E /* NewsTableViewCell.swift */,
 				697317BA24FF2C0E008CF53E /* Questions.swift */,
 				697317B424FE8A0C008CF53E /* TrackerViewController.swift */,
 				697317B224FE89E8008CF53E /* HospitalsViewController.swift */,
-				69F2677E24FD2DC70047330A /* VirusTableViewCell.swift */,
 				697032CB24F1299200B8E0E4 /* QuickAcessViewController.swift */,
 				69D307A824EE06B60077DB0F /* Info VIew controllers */,
 				69D307AB24EE07650077DB0F /* View controller */,
@@ -151,6 +156,7 @@
 			children = (
 				695E83D224E632EB00C8B817 /* Main.storyboard */,
 				695E83D724E632F000C8B817 /* LaunchScreen.storyboard */,
+				6997D0BD2505FF3C00667CAC /* LaunchScreenViewController.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -244,10 +250,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				697317BB24FF2C0E008CF53E /* Questions.swift in Sources */,
+				693D8CE525012D2900EAC69B /* EditProfileTableViewController.swift in Sources */,
 				697317B324FE89E9008CF53E /* HospitalsViewController.swift in Sources */,
 				695E83D124E632EB00C8B817 /* ViewController.swift in Sources */,
+				6997D0BE2505FF3C00667CAC /* LaunchScreenViewController.swift in Sources */,
 				697317B924FE9001008CF53E /* NewsTableViewCell.swift in Sources */,
-				69F2677F24FD2DC70047330A /* VirusTableViewCell.swift in Sources */,
+				6997D0BA2504DA6600667CAC /* Viruses.swift in Sources */,
 				69D2612F24FF306100D39B3B /* SelectTableViewController.swift in Sources */,
 				697317B724FE8CBF008CF53E /* CreditsViewController.swift in Sources */,
 				697032CC24F1299200B8E0E4 /* QuickAcessViewController.swift in Sources */,

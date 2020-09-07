@@ -1,29 +1,25 @@
 //
-//  SettingsViewController.swift
+//  LaunchScreenViewController.swift
 //  Symptracker
 //
-//  Created by Shanjiith Pranov on 19/8/20.
+//  Created by Shanjiith Pranov on 7/9/20.
 //  Copyright © 2020 sst. All rights reserved.
 //
 
 import UIKit
 
-class SettingsViewController: UITableViewController {
-    
-    var name = "Name"
 
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var profilepic: UIImageView!
+class LaunchScreenViewController: UIViewController {
+
+    @IBOutlet weak var gif: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        nameLabel.text = name
+    
         
     }
-    
-    
     
 
     /*
@@ -35,9 +31,5 @@ class SettingsViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    @IBAction func unwindToShow(_ sender: UIStoryboardSegue){
-        nameLabel.text = name
-    }
 
 }

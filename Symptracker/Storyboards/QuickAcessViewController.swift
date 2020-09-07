@@ -53,8 +53,12 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        currentVirus = row
+        
         return viruses[row].name
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        currentVirus = row
     }
     
     override func viewDidLoad() {
@@ -79,6 +83,10 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
         print(currentVirus)
         currentVirusText.text = viruses[currentVirus].name
         casesInt.text = String(viruses[currentVirus].cases)
+        deathsInt.text = String(viruses[currentVirus].deaths)
+        changeInt.text = String(viruses[currentVirus].change)
+        localInt.text = String(viruses[currentVirus].local)
+        importedInt.text = String(viruses[currentVirus].imported)
     }
     
 

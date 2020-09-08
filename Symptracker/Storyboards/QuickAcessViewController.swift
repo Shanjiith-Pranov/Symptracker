@@ -31,7 +31,7 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
     @IBOutlet weak var importedInt: UILabel!
     
     
-
+    
     @IBOutlet weak var currentVirusText: UILabel!
     @IBOutlet var tap: UITapGestureRecognizer!
     @IBOutlet weak var news: UITableView!
@@ -63,14 +63,13 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         selector.isHidden = true
         
         selectorPicker.delegate = self
         selectorPicker.dataSource = self
-        currentVirusText.text = viruses[currentVirus].name
-        
+        setValues()
     }
     
     @IBAction func tapped(_ sender: Any) {
@@ -80,45 +79,62 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     @IBAction func doneButtonTapped(_ sender: Any) {
         selector.isHidden = true
-        print(currentVirus)
+        setValues()
+        
+        
+    }
+    
+    
+    
+    func setValues(){
         currentVirusText.text = viruses[currentVirus].name
-        casesInt.text = String(viruses[currentVirus].cases)
-        deathsInt.text = String(viruses[currentVirus].deaths)
-        changeInt.text = String(viruses[currentVirus].change)
-        localInt.text = String(viruses[currentVirus].local)
-        importedInt.text = String(viruses[currentVirus].imported)
+        if viruses[currentVirus].cases == 0 {
+            casesInt.text = "-"
+        } else {
+            casesInt.text = String(viruses[currentVirus].cases)
+        }
+        
+        if viruses[currentVirus].deaths == 0 {
+            deathsInt.text = "-"
+        } else {
+            deathsInt.text = String(viruses[currentVirus].deaths)
+        }
+        
+        if viruses[currentVirus].change == 0 {
+            changeInt.text = "-"
+        } else {
+            changeInt.text = String(viruses[currentVirus].change)
+        }
+        
+        if viruses[currentVirus].local == 0 {
+            localInt.text = "-"
+        } else {
+            localInt.text = String(viruses[currentVirus].local)
+        }
+        
+        if viruses[currentVirus].imported == 0 {
+            importedInt.text = "-"
+        } else {
+            importedInt.text = String(viruses[currentVirus].imported)
+        }
     }
     
-
-    
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
-//    }
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 1
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        return UITableViewCell
-//    }
-    
-
-
-
     
     
-
     
-
+    
+    
+    
+    
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

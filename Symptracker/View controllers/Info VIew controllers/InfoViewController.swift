@@ -18,6 +18,8 @@ class InfoViewController: UIViewController {
         
 
         // Do any additional setup after loading the view.
+        GraphView.isHidden = true
+        NewsView.isHidden = true
         
     }
     
@@ -25,14 +27,14 @@ class InfoViewController: UIViewController {
         
         switch sender.selectedSegmentIndex {
         case 0:
-            GraphView.isHidden = false
-            NewsView.isHidden = true
+            GraphView.isHidden = true
+            NewsView.isHidden = false
             
             break
             
         case 1:
-            GraphView.isHidden = true
-            NewsView.isHidden = false
+            GraphView.isHidden = false
+            NewsView.isHidden = true
             
             break
             

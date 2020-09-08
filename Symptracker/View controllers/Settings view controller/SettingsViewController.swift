@@ -11,6 +11,7 @@ import UIKit
 class SettingsViewController: UITableViewController {
     
     var name = "Name"
+    var date = ""
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var profilepic: UIImageView!

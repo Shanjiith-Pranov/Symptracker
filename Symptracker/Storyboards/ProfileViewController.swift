@@ -1,26 +1,19 @@
 //
-//  LaunchScreenViewController.swift
+//  ProfileViewController.swift
 //  Symptracker
 //
-//  Created by Shanjiith Pranov on 7/9/20.
+//  Created by Shanjiith Pranov on 8/9/20.
 //  Copyright © 2020 sst. All rights reserved.
 //
 
 import UIKit
-import Darwin
 
+class ProfileViewController: UIViewController {
 
-class LaunchScreenViewController: UIViewController {
-
-    @IBOutlet weak var gif: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        sleep(2)
-        performSegue(withIdentifier: "show", sender: nil)
-    
-        
     }
     
 

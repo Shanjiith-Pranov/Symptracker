@@ -9,28 +9,63 @@
 import UIKit
 
 class EditProfileTableViewController: UITableViewController {
+    
+    let datePicker = UIDatePicker()
+    
+    
+    @IBOutlet weak var date: UITextField!
+    @IBOutlet weak var name: UITextField!
+    
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        createDatePicker()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        
     }
+    func createDatePicker() {
+        
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(doneButtonPressed))
+        toolbar.setItems([doneBtn], animated: true)
+        
+        date.inputAccessoryView = toolbar
+        
+        date.inputView = datePicker
+        datePicker.datePickerMode = .date
+    }
+    
+    @objc func doneButtonPressed() {
+        
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        formatter.timeStyle = .none
+        
+        date.text = formatter.string(from: datePicker.date)
+        self.view.endEditing(true)
+    }
+    
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
+//
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        // #warning Incomplete implementation, return the number of rows
+//        return 0
+//    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -82,8 +117,11 @@ class EditProfileTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
         let destVC = segue.destination as! SettingsViewController
-        destVC.name = "Yay i have a name now. YAYAYAYYAAYYAYAYAYAYAAY"
+        destVC.name = name.text ?? ""
+        
     }
     
     

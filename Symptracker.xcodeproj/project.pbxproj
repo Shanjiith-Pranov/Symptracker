@@ -21,12 +21,10 @@
 		697317B924FE9001008CF53E /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697317B824FE9001008CF53E /* NewsTableViewCell.swift */; };
 		697317BB24FF2C0E008CF53E /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697317BA24FF2C0E008CF53E /* Questions.swift */; };
 		6997D0BA2504DA6600667CAC /* Viruses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997D0B92504DA6500667CAC /* Viruses.swift */; };
-		6997D0BE2505FF3C00667CAC /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997D0BD2505FF3C00667CAC /* LaunchScreenViewController.swift */; };
 		69A0E62524ECB8F500CA6027 /* UISimpleSlidingTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62424ECB8F500CA6027 /* UISimpleSlidingTabController.swift */; };
 		69A0E62724ECB95000CA6027 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62624ECB95000CA6027 /* SettingsViewController.swift */; };
 		69A0E62924ECBA5700CA6027 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62824ECBA5700CA6027 /* InfoViewController.swift */; };
 		69D2612F24FF306100D39B3B /* SelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D2612E24FF306100D39B3B /* SelectTableViewController.swift */; };
-		69D9178A25071E40007E7799 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D9178925071E40007E7799 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,12 +44,10 @@
 		697317B824FE9001008CF53E /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		697317BA24FF2C0E008CF53E /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		6997D0B92504DA6500667CAC /* Viruses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viruses.swift; sourceTree = "<group>"; };
-		6997D0BD2505FF3C00667CAC /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		69A0E62424ECB8F500CA6027 /* UISimpleSlidingTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISimpleSlidingTabController.swift; sourceTree = "<group>"; };
 		69A0E62624ECB95000CA6027 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		69A0E62824ECBA5700CA6027 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		69D2612E24FF306100D39B3B /* SelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTableViewController.swift; sourceTree = "<group>"; };
-		69D9178925071E40007E7799 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,9 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				695E83D224E632EB00C8B817 /* Main.storyboard */,
-				69D9178925071E40007E7799 /* ProfileViewController.swift */,
 				695E83D724E632F000C8B817 /* LaunchScreen.storyboard */,
-				6997D0BD2505FF3C00667CAC /* LaunchScreenViewController.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -256,10 +250,8 @@
 				693D8CE525012D2900EAC69B /* EditProfileTableViewController.swift in Sources */,
 				697317B324FE89E9008CF53E /* HospitalsViewController.swift in Sources */,
 				695E83D124E632EB00C8B817 /* ViewController.swift in Sources */,
-				6997D0BE2505FF3C00667CAC /* LaunchScreenViewController.swift in Sources */,
 				697317B924FE9001008CF53E /* NewsTableViewCell.swift in Sources */,
 				6997D0BA2504DA6600667CAC /* Viruses.swift in Sources */,
-				69D9178A25071E40007E7799 /* ProfileViewController.swift in Sources */,
 				69D2612F24FF306100D39B3B /* SelectTableViewController.swift in Sources */,
 				697317B724FE8CBF008CF53E /* CreditsViewController.swift in Sources */,
 				697032CC24F1299200B8E0E4 /* QuickAcessViewController.swift in Sources */,

@@ -13,6 +13,7 @@ class EditProfileTableViewController: UITableViewController {
     let datePicker = UIDatePicker()
     
     
+    
     @IBOutlet weak var date: UITextField!
     @IBOutlet weak var name: UITextField!
     
@@ -21,6 +22,8 @@ class EditProfileTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createDatePicker()
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -52,6 +55,7 @@ class EditProfileTableViewController: UITableViewController {
         
         date.text = formatter.string(from: datePicker.date)
         self.view.endEditing(true)
+        
     }
     
 

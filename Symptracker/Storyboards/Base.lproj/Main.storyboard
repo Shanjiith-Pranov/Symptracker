@@ -437,7 +437,7 @@
                                         </prototypes>
                                     </tableView>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFk-m2-hVO" userLabel="SelectorView">
-                                        <rect key="frame" x="74" y="87" width="266" height="396"/>
+                                        <rect key="frame" x="74" y="119" width="266" height="396"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elA-YB-yif">
                                                 <rect key="frame" x="115" y="357" width="37" height="30"/>
@@ -707,21 +707,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2020-09-01 at 9.37.20 PM" translatesAutoresizingMaskIntoConstraints="NO" id="UqW-SY-2DH">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZNQ-cB-EAe">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                            </imageView>
+                                <connections>
+                                    <outlet property="delegate" destination="OuL-KW-nf5" id="zus-N5-7YJ"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" name="Beige"/>
                         <color key="tintColor" name="Bittersweet"/>
                         <constraints>
-                            <constraint firstItem="UqW-SY-2DH" firstAttribute="leading" secondItem="PQR-Z7-8bD" secondAttribute="leading" id="H8F-ee-lik"/>
-                            <constraint firstItem="PQR-Z7-8bD" firstAttribute="bottom" secondItem="UqW-SY-2DH" secondAttribute="bottom" id="OKa-lY-b26"/>
-                            <constraint firstItem="UqW-SY-2DH" firstAttribute="top" secondItem="PQR-Z7-8bD" secondAttribute="top" id="QPI-0f-mf9"/>
-                            <constraint firstItem="PQR-Z7-8bD" firstAttribute="trailing" secondItem="UqW-SY-2DH" secondAttribute="trailing" id="qx4-gt-ae8"/>
+                            <constraint firstItem="ZNQ-cB-EAe" firstAttribute="top" secondItem="PQR-Z7-8bD" secondAttribute="top" id="HR1-NX-W5h"/>
+                            <constraint firstItem="ZNQ-cB-EAe" firstAttribute="leading" secondItem="PQR-Z7-8bD" secondAttribute="leading" id="MFL-Er-Trj"/>
+                            <constraint firstItem="PQR-Z7-8bD" firstAttribute="bottom" secondItem="ZNQ-cB-EAe" secondAttribute="bottom" id="Vfu-vy-SNy"/>
+                            <constraint firstItem="PQR-Z7-8bD" firstAttribute="trailing" secondItem="ZNQ-cB-EAe" secondAttribute="trailing" id="kJ7-7X-DXn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQR-Z7-8bD"/>
                     </view>
                     <navigationItem key="navigationItem" id="7cP-6L-gIh"/>
+                    <connections>
+                        <outlet property="mapView" destination="ZNQ-cB-EAe" id="tHx-vY-hwT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeQ-mt-JHW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -774,7 +780,6 @@
         <image name="Image-1" width="216" height="319"/>
         <image name="Image-2" width="726" height="1652"/>
         <image name="Image-3" width="170.66667175292969" height="170.66667175292969"/>
-        <image name="Screenshot 2020-09-01 at 9.37.20 PM" width="412" height="722"/>
         <image name="info" catalog="system" width="93" height="128"/>
         <namedColor name="Beige">
             <color red="0.93300002813339233" green="0.92199999094009399" blue="0.81599998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

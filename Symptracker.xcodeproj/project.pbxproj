@@ -25,6 +25,7 @@
 		69A0E62724ECB95000CA6027 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62624ECB95000CA6027 /* SettingsViewController.swift */; };
 		69A0E62924ECBA5700CA6027 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62824ECBA5700CA6027 /* InfoViewController.swift */; };
 		69D2612F24FF306100D39B3B /* SelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D2612E24FF306100D39B3B /* SelectTableViewController.swift */; };
+		69D4B6912509244700679ED4 /* HospitalLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4B6902509244700679ED4 /* HospitalLocations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		69A0E62624ECB95000CA6027 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		69A0E62824ECBA5700CA6027 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		69D2612E24FF306100D39B3B /* SelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTableViewController.swift; sourceTree = "<group>"; };
+		69D4B6902509244700679ED4 /* HospitalLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalLocations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				695E83D224E632EB00C8B817 /* Main.storyboard */,
+				69D4B6902509244700679ED4 /* HospitalLocations.swift */,
 				695E83D724E632F000C8B817 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -248,6 +251,7 @@
 			files = (
 				697317BB24FF2C0E008CF53E /* Questions.swift in Sources */,
 				693D8CE525012D2900EAC69B /* EditProfileTableViewController.swift in Sources */,
+				69D4B6912509244700679ED4 /* HospitalLocations.swift in Sources */,
 				697317B324FE89E9008CF53E /* HospitalsViewController.swift in Sources */,
 				695E83D124E632EB00C8B817 /* ViewController.swift in Sources */,
 				697317B924FE9001008CF53E /* NewsTableViewCell.swift in Sources */,

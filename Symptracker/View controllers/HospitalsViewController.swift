@@ -160,6 +160,7 @@ class HospitalsViewController: UIViewController, MKMapViewDelegate {
     var regionInMeters:Double = 10000
     @IBOutlet weak var mapView: MKMapView!
     
+    @IBOutlet weak var hospitalImage: UIImageView!
     @IBOutlet weak var detailsView: UIView!
     @IBOutlet weak var text: UILabel!
     @IBOutlet weak var doneButton: UIButton!
@@ -214,6 +215,7 @@ class HospitalsViewController: UIViewController, MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         selectedAnnotation = view.annotation
         text.text = hospitalData[(Int(((selectedAnnotation?.subtitle)!)!)!)-1].contacts
+        hospitalImage.image = UIImage(named:hospitalData[(Int(((selectedAnnotation?.subtitle)!)!)!)-1].image)!
         
         detailsView.isHidden = false
         

@@ -728,7 +728,7 @@
                                             <action selector="doneButtonPressed:" destination="OuL-KW-nf5" eventType="touchUpInside" id="NIO-cn-dGG"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-3" translatesAutoresizingMaskIntoConstraints="NO" id="5TJ-da-HWM">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5TJ-da-HWM">
                                         <rect key="frame" x="10" y="50" width="394" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="9Hd-Np-rfO"/>
@@ -795,6 +795,7 @@
                         <outlet property="detailsView" destination="QOC-uo-jw6" id="1c2-nO-8NY"/>
                         <outlet property="doneButton" destination="Qyq-Ug-CvS" id="r0J-PF-Rp2"/>
                         <outlet property="goToWebsiteButton" destination="FhV-X6-Bty" id="pnt-T6-SQk"/>
+                        <outlet property="hospitalImage" destination="5TJ-da-HWM" id="WXM-JQ-ZZA"/>
                         <outlet property="mapView" destination="ZNQ-cB-EAe" id="tHx-vY-hwT"/>
                         <outlet property="text" destination="JIi-qs-Ns3" id="rgt-ut-jrs"/>
                     </connections>

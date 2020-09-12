@@ -14,7 +14,7 @@ class HospitalsViewController: UIViewController, MKMapViewDelegate {
     let hospitalData = [
         HospitalData(link: "https://www.ah.com.sg/Pages/Home.aspx",
                      contacts: "For general enquiries or change of appointments, please contact us at 6472 2000, or email AH_Enquiries@nuhs.edu.sg. For feedback and compliments, please call 6694 0070, or email AH_Feedback@nuhs.edu.sg.",
-                     image: ""),
+                     image: " "),
         HospitalData(link: "https://www.cgh.com.sg/pages/home.aspx",
                      contacts: "Mainline (24 hrs) - General Enquiries (6788 8833) Appointment Centre Mon to Fri : 8:30am – 8:00pm, Sat and Sun: 8:30am – 12:30pm, Closed on Public holidays (6850 3333)",
                      image: ""),

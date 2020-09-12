@@ -63,6 +63,32 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let urlString = "https://newsapi.org/v2/top-headlines?country=sg&category=health&apiKey=79f4b55069f24fe4bfbd959a914a29af"
+        let url = URL(string: urlString)
+        
+        guard url != nil else {
+            return
+        }
+        
+        let session = URLSession.shared
+        
+        let dataTask = session.dataTask(with: url!) { (data, response, error) in
+            if error == nil && data != nil {
+                let decoder = JSONDecoder()
+                do{
+                    let newsFeed = try decoder.decode(NewsFeed.self, from: data!)
+                    print(newsFeed.status) //////////////////
+                }
+            
+                catch{
+                    print("error")
+                }
+            }
+            
+        }
+        
+        dataTask.resume()
+//        getData(from: url)
         
         // Do any additional setup after loading the view.
         selector.isHidden = true
@@ -71,6 +97,39 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
         selectorPicker.dataSource = self
         setValues()
     }
+    
+//    private func getData(from url:String) {
+//
+//        let getData = URLSession.shared.dataTask(with: URL(string: url)!, completionHandler: { data, response, error in
+//
+//            guard let data = data, error == nil else {
+//                print("Uh oh, There has been some error")
+//                return
+//            }
+//
+//            /// have data
+//            var result: Response?
+//            do {
+//                result = try JSONDecoder().decode(Response.self, from: data)
+//            }
+//            catch{
+//                print("failed t  convert \(error.localizedDescription)")
+//            }
+//
+//            guard let json = result else {
+//                return
+//            }
+//
+//            print(json.status)
+//            print(json.totalResults)
+//
+//
+//            })
+//
+//            getData.resume()
+//    }
+    
+    
     
     @IBAction func tapped(_ sender: Any) {
         selector.isHidden = false
@@ -119,6 +178,10 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
         }
     }
     
+    
+    
+
+
     
     
     

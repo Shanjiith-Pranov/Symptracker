@@ -40,117 +40,118 @@ class HospitalsViewController: UIViewController, MKMapViewDelegate {
                      contacts: "General Enquiries Tel: 6256 6011 (24 hours helpline) Email: contact@ttsh.com.sg Emergency Department Tel: 6357 8754",
                      image: ""),
         HospitalData(link: "https://www.amkh.org.sg/index",
-                     contacts: "",
+                     contacts: " To book an appointment at our Dialysis Centre, please email to dialysis_referrals@amkh.org.sg or call 6507 9498.To book an appointment at our Day Rehabilitation Centre, Please email to day_rehab@amkh.org.sg or call 6450 6150",
                      image: ""),
         HospitalData(link: "https://www.singhealth.com.sg/SCH/our-hospitals/bright-vision-hospital/about-bvh",
-                     contacts: "",
+                     contacts: "    Tel: 6248 5755, Fax: 6881 3872, For feedback on BVH, email to: feedback@bvh.org.sg For careers at BVH, email to: hr@bvh.org.sg",
                      image: ""),
         HospitalData(link: "http://www.kwsh.org.sg/",
-                     contacts: "",
+                     contacts: "To find out more, please visit kwsh.org.sg and fb.com/KwongWaiShiuHospital.",
                      image: ""),
         HospitalData(link: "https://www.renci.org.sg/",
-                     contacts: "",
+                     contacts: "General Enquiries, Main: 6385 0288: Email : renci@renci.org.sg",
                      image: ""),
         HospitalData(link: "https://www.sach.org.sg/",
-                     contacts: "",
+                     contacts: "Career enquiries: 6586 1000, applyto@sach.org.sg All other Enquiries:6586 1000 general@sach.org.sg",
                      image: ""),
         HospitalData(link: "https://www.slh.org.sg/",
-                     contacts: "",
+                     contacts: "Tel: 6563 2281 Email: general@stluke.org.sg",
                      image: ""),
         HospitalData(link: "https://pachealthholdings.com/adam-road-medical-centre-armc/",
-                     contacts: "",
+                     contacts: "+65 9423 0918, (WHATSAPP APPOINTMENT) +65 6883 6955(GENERAL ENQUIRY)",
                      image: ""),
         HospitalData(link: "https://www.imh.com.sg/",
-                     contacts: "",
+                     contacts: "Main Line / General Enquiries Tel: 6389 2000",
                      image: ""),
         HospitalData(link: "https://www.hopkinsmedicine.org/singapore/",
-                     contacts: "",
+                     contacts: "    Oncology Appointments +65 6357 8000 International Patients ,+65  6357 1590 Medical Records Info  +65 6357 8448",
                      image: ""),
         HospitalData(link: "https://www.kkh.com.sg/ ",
-                     contacts: "",
+                     contacts: "    General Enquiries (24-hrs): +65 6-CALL KKH, (+65 6-2255 554)",
                      image: ""),
         HospitalData(link: "https://www.mountelizabeth.com.sg/",
-                     contacts: "",
+                     contacts: "    Phone Appointment Orchard +65 6250 0000 Novena +65 6898 6898 WhatsApp Appointment:  Orchard  +65 8111 7777 Novena  +65 8111 5777",
                      image: ""),
         HospitalData(link: "https://www.nccs.com.sg/",
-                     contacts: "",
+                     contacts: "Appointment Scheduling +65 6436 8088 callcentre@nccs.com.sg",
                      image: ""),
         HospitalData(link: "https://www.ndcs.com.sg/",
-                     contacts: "",
+                     contacts: "Appointments and enquiriesTel: +65 6324 8802, Hours: Monday to Friday 8.00am to 5.30pm, Email: appointment@ndcs.com.sg",
                      image: ""),
         HospitalData(link: "https://www.nhcs.com.sg/",
-                     contacts: "",
+                     contacts: "General Enquiries, Tel: (65) 6704 8000, Fax: (65) 6844 9030, Email: nhcs@nhcs.com.sg, Monday to Friday: 8am - 5pm, Saturday: 8am - 12pm",
                      image: ""),
         HospitalData(link: "https://www.nni.com.sg",
-                     contacts: "",
+                     contacts: "Enquiries, Tel:, (65) 6357 7022 (Outpatient), (65) 6357 7041 / (65) 6357 7042 (Inpatient), General Enquiries:, Email: enquiry@nni.com.sg ",
                      image: ""),
         HospitalData(link: "https://www.nsc.com.sg/Pages/index.aspx",
-                     contacts: "",
+                     contacts: "    Enquiries on Medication :, Email Pharmacy, Tel : (65) 6350 8454, Appointment Centre :, Tel : (65) 6350 6666",
                      image: ""),
         HospitalData(link: "https://www.snec.com.sg/",
-                     contacts: "",
+                     contacts: "General Enquiries: +65 6227 7255",
                      image: ""),
         HospitalData(link: "https://www.thomsonmedical.com/",
-                     contacts: "",
+                     contacts: "Phone : 6250 2222",
                      image: ""),
         HospitalData(link: "https://www.nhgp.com.sg/Our_Clinics/Ang_Mo_Kio_Polyclinic/",
-                     contacts: "",
+                     contacts: "   For general enquiries and polyclinic appointments, 6355 3000",
                      image: ""),
         HospitalData(link: "https://polyclinic.singhealth.com.sg/patient-care/shp-bedok",
-                     contacts: "",
+                     contacts: "General Enquiries & Appointments, Call Centre 6643 6969",
                      image: ""),
         HospitalData(link: "https://www.nup.com.sg/Pages/Our%20Clinics/our-clinics-bbp.aspx",
-                     contacts: "",
+                     contacts: "General Enquiries:(+65) 6663 6847",
                      image: ""),
         HospitalData(link: "https://polyclinic.singhealth.com.sg/patient-care/shp-bukit-merah",
-                     contacts: "",
+                     contacts: "General Enquiries & Appointments, Call Centre 6643 6969",
                      image: ""),
         HospitalData(link: "https://www.nup.com.sg/Pages/Our%20Clinics/our-clinics-cckp.aspx",
-                     contacts: "",
+                     contacts: "General Enquiries: (+65) 6663 6847",
                      image: ""),
         HospitalData(link: "https://www.nup.com.sg/Pages/Our%20Clinics/our-clinics-clemp.aspx",
-                     contacts: "",
+                     contacts: "General Enquiries: (+65) 6663 6847",
                      image: ""),
         HospitalData(link: "https://www.nhgp.com.sg/Our_Clinics/Geylang_Polyclinic/",
-                     contacts: "",
+                     contacts: "For general enquiries and polyclinic appointments, 6355 3000",
                      image: ""),
         HospitalData(link: "https://www.nhgp.com.sg/Our_Clinics/Hougang_Polyclinic/",
-                     contacts: "",
+                     contacts: "For general enquiries and polyclinic appointments, 6355 3000",
                      image: ""),
         HospitalData(link: "https://www.nup.com.sg/Pages/Our%20Clinics/our-clinics-jurp.aspx",
-                     contacts: "",
+                     contacts: "General Enquiries: (+65) 6663 6847",
                      image: ""),
         HospitalData(link: "https://polyclinic.singhealth.com.sg/patient-care/shp-marineparade",
-                     contacts: "",
+                     contacts: "General Enquiries & Appointments, Call Centre 6643 6969",
                      image: ""),
         HospitalData(link: "https://polyclinic.singhealth.com.sg/patient-care/shp-outram ",
-                     contacts: "",
+                     contacts: "General Enquiries & Appointments, Call Centre 6643 6969",
                      image: ""),
         HospitalData(link: "https://www.nup.com.sg/Pages/Our%20Clinics/our-clinics-pioneerp.aspx",
-                     contacts: "",
+                     contacts: "General Enquiries: (+65) 6663 6847",
                      image: ""),
         HospitalData(link: "https://polyclinic.singhealth.com.sg/patient-care/shp-pasir-ris",
-                     contacts: "",
+                     contacts: "General Enquiries & Appointments, Call Centre 6643 6969",
                      image: ""),
         HospitalData(link: "https://www.nup.com.sg/Pages/Our%20Clinics/our-clinics-queenstownp.aspx",
-                     contacts: "",
+                     contacts: "General Enquiries: (+65) 6663 6847",
                      image: ""),
         HospitalData(link: "https://polyclinic.singhealth.com.sg/patient-care/shp-sengkang",
-                     contacts: "",
+                     contacts: "General Enquiries & Appointments, Call Centre 6643 6969",
                      image: ""),
         HospitalData(link: "https://polyclinic.singhealth.com.sg/patient-care/shp-tampines",
-                     contacts: "",
+                     contacts: "General Enquiries & Appointments, Call Centre 6643 6969",
                      image: ""),
         HospitalData(link: "https://www.nhgp.com.sg/Our_Clinics/Toa_Payoh_Polyclinic/",
-                     contacts: "",
+                     contacts: "For general enquiries and polyclinic appointments, 6355 3000",
                      image: ""),
         HospitalData(link: "https://www.nhgp.com.sg/Our_Clinics/Woodlands_Polyclinic/",
-                     contacts: "",
+                     contacts: "For general enquiries and polyclinic appointments, 6355 3000",
                      image: ""),
         HospitalData(link: "https://www.nhgp.com.sg/Our_Clinics/Yishun_Polyclinic/",
-                     contacts: "",
+                     contacts: "For general enquiries and polyclinic appointments, 6355 3000",
                      image: "")
     ]
+    
     
     let hospitalAnnotations = HospitalAnnotations()
     var selectedAnnotation: MKAnnotation?
@@ -303,315 +304,3 @@ extension HospitalsViewController: CLLocationManagerDelegate {
     }
 }
 
-
-//For general enquiries or change of appointments, please contact us at 6472 2000, or email AH_Enquiries@nuhs.edu.sg. For feedback and compliments, please call 6694 0070, or email AH_Feedback@nuhs.edu.sg.
-//
-//
-//
-Mainline (24 hrs) - General Enquiries (6788 8833) Appointment Centre Mon to Fri : 8:30am – 8:00pm, Sat and Sun: 8:30am – 12:30pm, Closed on Public holidays (6850 3333)
-//
-//
-//
-//
-//
-General Enquiries (24hrs) Tel: +65 6222 3322
-//
-//
-//
-A&E 24-hour Walk-in Clinic +65 6340 8666, Phone Appointment & General  Enquiry +65 6377 3737,  WhatsApp Appointment +65 8111 3777
-//
-//
-//
-//
-//
-Phone Appointment +65 6575 7575, WhatsApp Appointment +65 8111 9777
-//
-//
-//
-24-HOUR HOTLINE:+65 6347 6688
-//
-//
-//
-//
-//
-Main Line (24-hr) +65 6779 5555, Appointment Line (Central), +65 6772 2002 appointment@nuhs.edu.sg, Emergency (24-hr) +65 6772 5000
-//
-//
-//
-24-hour Hotline / Appt (+65 6311 1111 /+65 6311 1222)
-//
-//
-//
-//
-//
-General Enquiries Tel: 6256 6011 (24 hours helpline)
-//Email: contact@ttsh.com.sg Emergency Department Tel: 6357 8754
-//
-//
-//
-//
-//
-//
-//
-o book an appointment at our Dialysis Centre,
-//please email to dialysis_referrals@amkh.org.sg or call 6507 9498.
-//
-//To book an appointment at our Day Rehabilitation Centre,
-//Please email to day_rehab@amkh.org.sg or call 6450 6150
-//
-//
-//
-//
-//
-Tel: 6248 5755
-//
-//Fax: 6881 3872
-//
-//For feedback on BVH, email to: feedback@bvh.org.sg
-//
-//For careers at BVH, email to: hr@bvh.org.sg
-//
-//
-//
-//
-//
-To find out more, please visit kwsh.org.sg and fb.com/KwongWaiShiuHospital.
-//
-//
-//
-General Enquiries, Main: 6385 0288: Email : renci@renci.org.sg
-//
-//
-//
-Career enquiries: 6586 1000
-//
-//applyto@sach.org.sg All other Enquiries:6586 1000 general@sach.org.sg
-//
-//
-//
-//
-//
-Tel: 6563 2281 Email: general@stluke.org.sg
-//
-//
-//
-+65 9423 0918
-//
-//(WHATSAPP APPOINTMENT) +65 6883 6955(GENERAL ENQUIRY)
-//
-//
-//
-//
-//
-Main Line / General Enquiries Tel: 6389 2000
-//
-//
-//
-//
-//
-Oncology Appointments +65 6357 8000 International Patients
-//
-//+65  6357 1590 Medical Records Info  +65 6357 8448
-//
-//
-//
-//
-//
-General Enquiries (24-hrs): +65 6-CALL KKH
-//
-//(+65 6-2255 554)
-//
-// 
-//
-//
-//
-Phone Appointment
-//
-//Orchard +65 6250 0000 Novena +65 6898 6898
-//
-//WhatsApp Appointment:  Orchard  +65 8111 7777 Novena  +65 8111 5777
-//
-//        
-//
-//
-//
-//
-//
-//
-//
-Appointment Scheduling +65 6436 8088 callcentre@nccs.com.sg
-//
-//
-//
-//
-//
-//
-//
-Appointments and enquiriesTel: +65 6324 8802
-//
-//Hours: Monday to Friday 8.00am to 5.30pm
-//
-//Email: appointment@ndcs.com.sg
-//
-//
-//
-//
-//
-General Enquiries
-//
-//
-//
-//Tel: (65) 6704 8000
-//Fax: (65) 6844 9030
-//
-//Email: nhcs@nhcs.com.sg
-//
-//Monday to Friday: 8am - 5pm
-//
-//Saturday: 8am - 12pm
-//
-//
-//
-//
-//
-Enquiries
-//
-//Tel:
-//
-//(65) 6357 7022 (Outpatient)
-//
-//(65) 6357 7041 / (65) 6357 7042 (Inpatient)
-//
-// General Enquiries:
-//
-//Email: enquiry@nni.com.sg
-//
-// 
-//
-//
-//
-Enquiries on Medication :
-//
-//Email Pharmacy
-//
-//Tel : (65) 6350 8454
-//
-//Appointment Centre :
-//
-//Tel : (65) 6350 6666
-//
-//
-//
-General Enquiries: +65 6227 7255
-//
-//
-//
-Phone : 6250 2222
-//
-//
-//
-For general enquiries and polyclinic appointments
-//6355 3000
-//
-//
-//
-General Enquiries & Appointments
-//
-//Call Centre 6643 6969
-//
-//
-//
-//
-//
-General Enquiries:(+65) 6663 6847
-//
-//
-//
-General Enquiries & Appointments
-//
-//Call Centre 6643 6969
-//
-//
-//
-General Enquiries: (+65) 6663 6847
-//
-//
-//
-General Enquiries: (+65) 6663 6847
-//
-//
-//
-// 
-//
-For general enquiries and polyclinic appointments
-//6355 3000
-//
-//
-//
-For general enquiries and polyclinic appointments
-//6355 3000
-//
-//
-//
-General Enquiries: (+65) 6663 6847
-//
-//
-//
-//
-//
-General Enquiries & Appointments
-//
-//Call Centre 6643 6969
-//
-//
-//
-General Enquiries & Appointments
-//
-//Call Centre 6643 6969
-//
-//
-//
-General Enquiries: (+65) 6663 6847
-//
-//
-//
-General Enquiries & Appointments
-//
-//Call Centre 6643 6969
-//
-//
-//
-//
-//
-General Enquiries: (+65) 6663 6847
-//
-//
-//
-General Enquiries & Appointments
-//
-//Call Centre 6643 6969
-//
-//
-//
-General Enquiries & Appointments
-//
-//Call Centre 6643 6969
-//
-//
-//
-//
-//
-For general enquiries and polyclinic appointments
-//6355 3000
-//
-//
-//
-For general enquiries and polyclinic appointments
-//6355 3000
-//
-//
-//
-For general enquiries and polyclinic appointments
-//6355 3000
-//
-//

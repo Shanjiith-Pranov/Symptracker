@@ -10,6 +10,7 @@
 		693D8CE525012D2900EAC69B /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693D8CE425012D2900EAC69B /* EditProfileTableViewController.swift */; };
 		694E4193250CA5CD001FE3BD /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694E4192250CA5CC001FE3BD /* NewsFeed.swift */; };
 		694E4195250CA925001FE3BD /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694E4194250CA925001FE3BD /* Article.swift */; };
+		694E4197250CC703001FE3BD /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694E4196250CC703001FE3BD /* NewsTableViewController.swift */; };
 		695E83CD24E632EB00C8B817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E83CC24E632EB00C8B817 /* AppDelegate.swift */; };
 		695E83CF24E632EB00C8B817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E83CE24E632EB00C8B817 /* SceneDelegate.swift */; };
 		695E83D124E632EB00C8B817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E83D024E632EB00C8B817 /* ViewController.swift */; };
@@ -25,7 +26,6 @@
 		6997D0BA2504DA6600667CAC /* Viruses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997D0B92504DA6500667CAC /* Viruses.swift */; };
 		69A0E62524ECB8F500CA6027 /* UISimpleSlidingTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62424ECB8F500CA6027 /* UISimpleSlidingTabController.swift */; };
 		69A0E62724ECB95000CA6027 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62624ECB95000CA6027 /* SettingsViewController.swift */; };
-		69A0E62924ECBA5700CA6027 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0E62824ECBA5700CA6027 /* InfoViewController.swift */; };
 		69D2612F24FF306100D39B3B /* SelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D2612E24FF306100D39B3B /* SelectTableViewController.swift */; };
 		69D4B6912509244700679ED4 /* HospitalLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4B6902509244700679ED4 /* HospitalLocations.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +34,7 @@
 		693D8CE425012D2900EAC69B /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditProfileTableViewController.swift; path = Symptracker/Storyboards/EditProfileTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		694E4192250CA5CC001FE3BD /* NewsFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
 		694E4194250CA925001FE3BD /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		694E4196250CC703001FE3BD /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		695E83C924E632EB00C8B817 /* Symptracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Symptracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		695E83CC24E632EB00C8B817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		695E83CE24E632EB00C8B817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		6997D0B92504DA6500667CAC /* Viruses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viruses.swift; sourceTree = "<group>"; };
 		69A0E62424ECB8F500CA6027 /* UISimpleSlidingTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISimpleSlidingTabController.swift; sourceTree = "<group>"; };
 		69A0E62624ECB95000CA6027 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		69A0E62824ECBA5700CA6027 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		69D2612E24FF306100D39B3B /* SelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTableViewController.swift; sourceTree = "<group>"; };
 		69D4B6902509244700679ED4 /* HospitalLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalLocations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,20 +117,11 @@
 				697032CB24F1299200B8E0E4 /* QuickAcessViewController.swift */,
 				694E4192250CA5CC001FE3BD /* NewsFeed.swift */,
 				694E4194250CA925001FE3BD /* Article.swift */,
-				69D307A824EE06B60077DB0F /* Info VIew controllers */,
 				69D307AB24EE07650077DB0F /* View controller */,
 				69D307A924EE06CA0077DB0F /* Settings view controller */,
 				69D2612E24FF306100D39B3B /* SelectTableViewController.swift */,
 			);
 			path = "View controllers";
-			sourceTree = "<group>";
-		};
-		69D307A824EE06B60077DB0F /* Info VIew controllers */ = {
-			isa = PBXGroup;
-			children = (
-				69A0E62824ECBA5700CA6027 /* InfoViewController.swift */,
-			);
-			path = "Info VIew controllers";
 			sourceTree = "<group>";
 		};
 		69D307A924EE06CA0077DB0F /* Settings view controller */ = {
@@ -161,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				695E83D224E632EB00C8B817 /* Main.storyboard */,
+				694E4196250CC703001FE3BD /* NewsTableViewController.swift */,
 				69D4B6902509244700679ED4 /* HospitalLocations.swift */,
 				695E83D724E632F000C8B817 /* LaunchScreen.storyboard */,
 			);
@@ -263,6 +255,7 @@
 				697317B324FE89E9008CF53E /* HospitalsViewController.swift in Sources */,
 				695E83D124E632EB00C8B817 /* ViewController.swift in Sources */,
 				697317B924FE9001008CF53E /* NewsTableViewCell.swift in Sources */,
+				694E4197250CC703001FE3BD /* NewsTableViewController.swift in Sources */,
 				6997D0BA2504DA6600667CAC /* Viruses.swift in Sources */,
 				69D2612F24FF306100D39B3B /* SelectTableViewController.swift in Sources */,
 				697317B724FE8CBF008CF53E /* CreditsViewController.swift in Sources */,
@@ -271,7 +264,6 @@
 				697317B524FE8A0C008CF53E /* TrackerViewController.swift in Sources */,
 				695E83CD24E632EB00C8B817 /* AppDelegate.swift in Sources */,
 				69A0E62724ECB95000CA6027 /* SettingsViewController.swift in Sources */,
-				69A0E62924ECBA5700CA6027 /* InfoViewController.swift in Sources */,
 				695E83CF24E632EB00C8B817 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

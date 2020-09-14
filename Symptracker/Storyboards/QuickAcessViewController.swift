@@ -10,9 +10,12 @@ import UIKit
 
 
 
-class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
+
+    
     //,UITableViewDelegate, UITableViewDataSource
     
+    var rows = 1
     
     var viruses = [Viruses(name: "Covid-19", cases: 57022, deaths: 27, change: 34, local: 3, imported: 2),Viruses(name: "Dengue", cases: 17249, deaths: 19, change: 76, local: 0, imported: 0),Viruses(name: "Zika", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Hand, Foot and Mouth Disease", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Yellow Fever", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Ebola", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Influenza", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Avian Influenza", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Tuberculosis", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Novel Coronavirus Infection (MERS-COV)", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Norovirus Gastroenteritis (Gastric Flu)", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Hepatitis A", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Hepatitis E", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Hepatitis B", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Hepatitis C", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Campylobacteriosis", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Chikungunya Fever", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Conjunctivitis", cases: 0, deaths: 0, change: 0, local: 0, imported: 0),Viruses(name: "Mumps", cases: 0, deaths: 0, change: 0, local: 0, imported: 0)
     ]
@@ -63,32 +66,10 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let urlString = "https://newsapi.org/v2/top-headlines?country=sg&category=health&apiKey=79f4b55069f24fe4bfbd959a914a29af"
-        let url = URL(string: urlString)
         
-        guard url != nil else {
-            return
-        }
-        
-        let session = URLSession.shared
-        
-        let dataTask = session.dataTask(with: url!) { (data, response, error) in
-            if error == nil && data != nil {
-                let decoder = JSONDecoder()
-                do{
-                    let newsFeed = try decoder.decode(NewsFeed.self, from: data!)
-                    print(newsFeed.status) //////////////////
-                }
-            
-                catch{
-                    print("error")
-                }
-            }
-            
-        }
-        
-        dataTask.resume()
 //        getData(from: url)
+        
+
         
         // Do any additional setup after loading the view.
         selector.isHidden = true
@@ -97,6 +78,10 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
         selectorPicker.dataSource = self
         setValues()
     }
+    
+
+
+
     
 //    private func getData(from url:String) {
 //
@@ -178,6 +163,8 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
         }
     }
     
+
+    
     
     
 
@@ -201,3 +188,4 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
      */
     
 }
+

@@ -10,6 +10,8 @@ import UIKit
 
 class NewsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var titleText: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

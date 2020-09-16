@@ -315,8 +315,8 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="RcR-mG-xQl" id="c2s-2e-0SA"/>
-                            <outlet property="delegate" destination="RcR-mG-xQl" id="4Vt-oT-poR"/>
+                            <outlet property="dataSource" destination="RcR-mG-xQl" id="4rC-Rh-4bC"/>
+                            <outlet property="delegate" destination="RcR-mG-xQl" id="Lq7-vq-czu"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="News" id="Bhr-lO-Zu9"/>

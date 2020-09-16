@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VEO-po-zTj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VEO-po-zTj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -329,7 +329,7 @@
         <scene sceneID="rI0-Uu-ZJ8">
             <objects>
                 <navigationController id="GJN-Wl-Mc2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="News" id="Wi6-gq-RW0"/>
+                    <tabBarItem key="tabBarItem" title="News" image="doc.plaintext" catalog="system" id="Wi6-gq-RW0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FlO-CT-oYW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -346,7 +346,7 @@
         <scene sceneID="al2-gM-3og">
             <objects>
                 <navigationController title="Settings" id="jrF-5K-eZa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="zDF-hw-gKv"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="zDF-hw-gKv"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wsa-2h-p0M">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -669,7 +669,7 @@
         <scene sceneID="3nf-Vn-nQR">
             <objects>
                 <navigationController title="Quick Access" automaticallyAdjustsScrollViewInsets="NO" id="FFm-7U-nfw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Quick Acess" id="Eoa-KQ-yEx"/>
+                    <tabBarItem key="tabBarItem" title="Quick Acess" image="house.fill" catalog="system" id="Eoa-KQ-yEx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pZm-mX-h7b">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -795,7 +795,7 @@
         <scene sceneID="Zl8-sS-8kd">
             <objects>
                 <navigationController title="Tracker" automaticallyAdjustsScrollViewInsets="NO" id="tMX-0W-agD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tracker" id="dZD-sE-rTZ"/>
+                    <tabBarItem key="tabBarItem" title="Tracker" image="magnifyingglass" catalog="system" id="dZD-sE-rTZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gC1-cI-wGM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -816,7 +816,7 @@
         <scene sceneID="vcn-iG-azM">
             <objects>
                 <navigationController title="Hospitals" automaticallyAdjustsScrollViewInsets="NO" id="aBh-rz-fZY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Hospitals" id="r1V-aO-RSU"/>
+                    <tabBarItem key="tabBarItem" title="Hospitals" image="paperplane.fill" catalog="system" id="r1V-aO-RSU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UYn-Y2-kfc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -836,6 +836,11 @@
     </scenes>
     <resources>
         <image name="Image-3" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="doc.plaintext" catalog="system" width="115" height="128"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="121"/>
         <namedColor name="Beige">
             <color red="0.93300002813339233" green="0.92199999094009399" blue="0.81599998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

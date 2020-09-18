@@ -66,14 +66,6 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        getData(from: url)
-        
-
-        
-        // Do any additional setup after loading the view.
-        selector.isHidden = true
-        
         selectorPicker.delegate = self
         selectorPicker.dataSource = self
         setValues()
@@ -116,13 +108,9 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     
     
-    @IBAction func tapped(_ sender: Any) {
-        selector.isHidden = false
-        
-    }
     
     @IBAction func doneButtonTapped(_ sender: Any) {
-        selector.isHidden = true
+        
         setValues()
         
         

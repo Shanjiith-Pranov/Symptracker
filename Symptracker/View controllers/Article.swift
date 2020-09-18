@@ -8,10 +8,13 @@
 
 import Foundation
 
+internal var articles = [Article]()
+internal var rows:Int = 0
+
 struct Article:Codable {
-    var author:String?
-    var title:String?
-    var description:String?
-    var url:String?
-    var urlToImage:String?
+    var author:String
+    var title:String
+    var description:String
+    var url:String
+    var urlToImage:String
 }

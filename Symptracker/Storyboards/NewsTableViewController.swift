@@ -7,77 +7,23 @@
 //
 
 import UIKit
+import SafariServices
 
 class NewsTableViewController: UITableViewController{
     
-    var row = 4
-    var articles:[Article]?
-    var author:String = "hello"
-    var titleString:String = "hello"
-    var descriptionString:String = "hello"
-    var url:String = "hello"
-    var urlToImage:String = "hello"
-    var testVALUECHANGE:Int = 0
-    var testVALUECHANGe:String = "hello"
     
     
     
-    func getData(){
+    
 
-        
-        let urlString = "https://newsapi.org/v2/top-headlines?country=sg&category=health&apiKey=79f4b55069f24fe4bfbd959a914a29af"
-        let urlLink = URL(string: urlString)
-        
-        
-        let session = URLSession.shared
-        
-        let dataTask = session.dataTask(with: urlLink!) { (data, response, error) in
-            if error == nil && data != nil {
-                do {
-                    let jsonDictionary = try JSONSerialization.jsonObject(with: data!, options: []) as? [String: Any]
-                    let articlesDictionary = jsonDictionary!["articles"] as! [[String:Any]]
-                    self.articles = articlesDictionary.map{
-                        Article(author: $0["author"] as? String , title: $0["title"] as? String , description: $0["description"] as? String , url: $0["url"] as? String , urlToImage: $0["urlToImage"] as? String )
-                        
-                    }
-//                    print(articlesDictionary)
-                    
-                    
-                    self.author = self.articles![self.row].author ?? "-"
-                    self.titleString = self.articles![ self.row].title ?? "-"
-                    self.descriptionString = self.articles![ self.row].description ?? "-"
-                    self.url = self.articles![ self.row].url ?? "-"
-                    self.urlToImage = self.articles![ self.row].urlToImage ?? "-"
-                    
-                } catch {
-                    print(error.localizedDescription)
-                }
-
-            }
-            
-        }
-        
-        dataTask.resume()
-        
-        
-
-        
-        //        print((articles?[1].title))
-//        return (author,titleString,descriptionString, url, urlToImage)
-        
-        
-        
-        
-        
-        
-    }
     
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
-        getData()
+        
+        
 
         
         
@@ -89,7 +35,15 @@ class NewsTableViewController: UITableViewController{
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(0), execute: {
+            self.view.backgroundColor = UIColor.white
+            let safariViewController = SFSafariViewController(url: URL(string:(articles[indexPath.row].url))!)
+            safariViewController.dismissButtonStyle = .close
+            
+            self.present(safariViewController, animated: true, completion: nil)
+        })
+    }
     
     // MARK: - Table view data source
     
@@ -102,24 +56,23 @@ class NewsTableViewController: UITableViewController{
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return row
+        return rows
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 200
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "new", for: indexPath)
-        //        print("**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************")
-        //
-        //        print("gotdata")
+
         
         
         
         if let cell = cell as? NewsTableViewCell{
-            cell.titleText.text = (articles?[1].title)
-            
+            cell.titleText.text = (articles[indexPath.row].title)
+            cell.authorText.text = "By: \(articles[indexPath.row].author)"
+            cell.descriptionText.text = (articles[indexPath.row].description)
             //            print("printing data")
             //            print(articles?[1].title!, "helllllllllllooooooooooooooooooo")
             

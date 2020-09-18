@@ -36,14 +36,13 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     
     @IBOutlet weak var currentVirusText: UILabel!
-    @IBOutlet var tap: UITapGestureRecognizer!
-    @IBOutlet weak var news: UITableView!
+    
     @IBOutlet weak var casesUIView: UIView!
     @IBOutlet weak var selector: UIView!
     
     @IBOutlet weak var selectorPicker: UIPickerView!
     @IBOutlet weak var done: UIButton!
-    @IBOutlet weak var newsTable: UITableView!
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -72,7 +71,7 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
 
         
         // Do any additional setup after loading the view.
-        selector.isHidden = true
+        
         
         selectorPicker.delegate = self
         selectorPicker.dataSource = self
@@ -116,13 +115,10 @@ class QuickAcessViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     
     
-    @IBAction func tapped(_ sender: Any) {
-        selector.isHidden = false
-        
-    }
+    
     
     @IBAction func doneButtonTapped(_ sender: Any) {
-        selector.isHidden = true
+        
         setValues()
         
         
